@@ -1,0 +1,862 @@
+<html>
+<head>
+<title>TestNG:  HB_Active_MyAccount_LifeEvent_New_Hire</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>HB_Active_MyAccount_LifeEvent_New_Hire</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>37/2/1</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Feb 20 19:39:05 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>265 seconds (265614 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>All HB_Active_PPT_TestCases </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.teardown()'><b>teardown</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3a29c3c12abafefb97b880a769ab0822, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51374}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\PRADEE~1.NAY\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51374/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a29c3c12abafefb97b880a769ab0822
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:406)
+	at resources.Base.teardown(Base.java:319)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace806382515", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace806382515'><pre>org.openqa.selenium.WebDriverException: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3a29c3c12abafefb97b880a769ab0822, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51374}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\PRADEE~1.NAY\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51374/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a29c3c12abafefb97b880a769ab0822
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
+	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:406)
+	at resources.Base.teardown(Base.java:319)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.TestRunner.afterRun(TestRunner.java:725)
+	at org.testng.TestRunner.run(TestRunner.java:509)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>1</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_40_to_verify_user_able_to_Land_on_Life_Events_Summary_Page()'><b>TS_51_TC_40_to_verify_user_able_to_Land_on_Life_Events_Summary_Page</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;table table-dark table-cost-summary&apos;]/thead/tr/th&quot;}
+  (Session info: MicrosoftEdge=121.0.2277.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3a29c3c12abafefb97b880a769ab0822, findElement {value=//*[@class=&apos;table table-dark table-cost-summary&apos;]/thead/tr/th, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51374}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\PRADEE~1.NAY\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51374/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a29c3c12abafefb97b880a769ab0822
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at HB_Active_PPT_PageObjects.LifeEvent_Summary_YourCoveragePreview_PageObject.footer_dark_table_cost_summary_header_Size(LifeEvent_Summary_YourCoveragePreview_PageObject.java:94)
+	at HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_40_to_verify_user_able_to_Land_on_Life_Events_Summary_Page(HB_New_Hire_LifeEvent_TestCase.java:1711)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1392918814", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1392918814'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;table table-dark table-cost-summary&apos;]/thead/tr/th&quot;}
+  (Session info: MicrosoftEdge=121.0.2277.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3a29c3c12abafefb97b880a769ab0822, findElement {value=//*[@class=&apos;table table-dark table-cost-summary&apos;]/thead/tr/th, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51374}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\PRADEE~1.NAY\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51374/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a29c3c12abafefb97b880a769ab0822
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at HB_Active_PPT_PageObjects.LifeEvent_Summary_YourCoveragePreview_PageObject.footer_dark_table_cost_summary_header_Size(LifeEvent_Summary_YourCoveragePreview_PageObject.java:94)
+	at HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_40_to_verify_user_able_to_Land_on_Life_Events_Summary_Page(HB_New_Hire_LifeEvent_TestCase.java:1711)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>7</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_42_to_verify_Size_And_text_of_Sub_tab_Summary_Page_()'><b>TS_51_TC_42_to_verify_Size_And_text_of_Sub_tab_Summary_Page_</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;table table-dark table-cost-summary&apos;]/thead/tr/th&quot;}
+  (Session info: MicrosoftEdge=121.0.2277.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3a29c3c12abafefb97b880a769ab0822, findElement {value=//*[@class=&apos;table table-dark table-cost-summary&apos;]/thead/tr/th, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51374}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\PRADEE~1.NAY\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51374/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a29c3c12abafefb97b880a769ab0822
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at HB_Active_PPT_PageObjects.LifeEvent_Summary_YourCoveragePreview_PageObject.footer_dark_table_cost_summary_header_Size(LifeEvent_Summary_YourCoveragePreview_PageObject.java:94)
+	at HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_42_to_verify_Size_And_text_of_Sub_tab_Summary_Page_(HB_New_Hire_LifeEvent_TestCase.java:1744)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1082436301", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1082436301'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;table table-dark table-cost-summary&apos;]/thead/tr/th&quot;}
+  (Session info: MicrosoftEdge=121.0.2277.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3a29c3c12abafefb97b880a769ab0822, findElement {value=//*[@class=&apos;table table-dark table-cost-summary&apos;]/thead/tr/th, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51374}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\PRADEE~1.NAY\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51374/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a29c3c12abafefb97b880a769ab0822
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at HB_Active_PPT_PageObjects.LifeEvent_Summary_YourCoveragePreview_PageObject.footer_dark_table_cost_summary_header_Size(LifeEvent_Summary_YourCoveragePreview_PageObject.java:94)
+	at HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_42_to_verify_Size_And_text_of_Sub_tab_Summary_Page_(HB_New_Hire_LifeEvent_TestCase.java:1744)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>5</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_43_to_verify_Dependent_table_name_Self()'><b>TS_51_TC_43_to_verify_Dependent_table_name_Self</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3a29c3c12abafefb97b880a769ab0822, findElement {value=//*[@class=&apos;table table-accordion table-dependents-coverage&apos;]/tbody[1]/tr[1]/td[3]/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51374}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\PRADEE~1.NAY\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51374/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a29c3c12abafefb97b880a769ab0822
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at HB_Active_PPT_PageObjects.LifeEvent_Summary_YourCoveragePreview_PageObject.table_body_first_row_3rd_column_data_tex_Name(LifeEvent_Summary_YourCoveragePreview_PageObject.java:251)
+	at HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_43_to_verify_Dependent_table_name_Self(HB_New_Hire_LifeEvent_TestCase.java:1768)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1549940", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1549940'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3a29c3c12abafefb97b880a769ab0822, findElement {value=//*[@class=&apos;table table-accordion table-dependents-coverage&apos;]/tbody[1]/tr[1]/td[3]/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51374}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\PRADEE~1.NAY\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51374/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a29c3c12abafefb97b880a769ab0822
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at HB_Active_PPT_PageObjects.LifeEvent_Summary_YourCoveragePreview_PageObject.table_body_first_row_3rd_column_data_tex_Name(LifeEvent_Summary_YourCoveragePreview_PageObject.java:251)
+	at HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_43_to_verify_Dependent_table_name_Self(HB_New_Hire_LifeEvent_TestCase.java:1768)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_43_to_verify_Dependent_table_name_Self()'><b>TS_51_TC_43_to_verify_Dependent_table_name_Self</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td><div><pre>java.lang.RuntimeException: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3a29c3c12abafefb97b880a769ab0822, executeScript {args=[], script=return Math.max(document.body.scrollHeight, document.body.offsetHeight,
+    document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51374}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\PRADEE~1.NAY\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51374/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a29c3c12abafefb97b880a769ab0822
+	at ru.yandex.qatools.ashot.util.InnerScript.execute(InnerScript.java:29)
+	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getFullHeight(ViewportPastingDecorator.java:67)
+	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getScreenshot(ViewportPastingDecorator.java:41)
+	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getScreenshot(ViewportPastingDecorator.java:35)
+	at ru.yandex.qatools.ashot.AShot.takeScreenshot(AShot.java:143)
+	at resources.Base.takeScreenshots(Base.java:430)
+	at customListeners.TestListener.onTestFailure(TestListener.java:115)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3a29c3c12abafefb97b880a769ab0822, executeScript {args=[], script=return Math.max(document.body.scrollHeight, document.body.offsetHeight,
+    document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51374}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\PRADEE~1.NAY\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51374/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a29c3c12abafefb97b880a769ab0822
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:464)
+	at ru.yandex.qatools.ashot.util.InnerScript.execute(InnerScript.java:27)
+	... 23 more
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1538801004", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1538801004'><pre>java.lang.RuntimeException: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3a29c3c12abafefb97b880a769ab0822, executeScript {args=[], script=return Math.max(document.body.scrollHeight, document.body.offsetHeight,
+    document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51374}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\PRADEE~1.NAY\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51374/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a29c3c12abafefb97b880a769ab0822
+	at ru.yandex.qatools.ashot.util.InnerScript.execute(InnerScript.java:29)
+	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getFullHeight(ViewportPastingDecorator.java:67)
+	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getScreenshot(ViewportPastingDecorator.java:41)
+	at ru.yandex.qatools.ashot.shooting.ViewportPastingDecorator.getScreenshot(ViewportPastingDecorator.java:35)
+	at ru.yandex.qatools.ashot.AShot.takeScreenshot(AShot.java:143)
+	at resources.Base.takeScreenshots(Base.java:430)
+	at customListeners.TestListener.onTestFailure(TestListener.java:115)
+	at org.testng.internal.TestListenerHelper.runTestListeners(TestListenerHelper.java:67)
+	at org.testng.internal.Invoker.runTestListeners(Invoker.java:1389)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:636)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=121.0.2277.112)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3a29c3c12abafefb97b880a769ab0822, executeScript {args=[], script=return Math.max(document.body.scrollHeight, document.body.offsetHeight,
+    document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51374}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\PRADEE~1.NAY\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51374/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a29c3c12abafefb97b880a769ab0822
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:464)
+	at ru.yandex.qatools.ashot.util.InnerScript.execute(InnerScript.java:27)
+	... 23 more
+</pre></div></td>
+<td>14</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_01_to_verify_Click_ON_LifeEvent_DropdownOption_In_MyAccountTab()'><b>TS_51_TC_01_to_verify_Click_ON_LifeEvent_DropdownOption_In_MyAccountTab</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase<br>Parameters: mbctra2089@lifeworks.com, Welcome4</td>
+<td></td>
+<td>89</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_02_Verify_LifeEvents_Dashboard_page()'><b>TS_51_TC_02_Verify_LifeEvents_Dashboard_page</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_03_Verify_Other_Things_To_Consider_Bullet_Points_Must_be_visible()'><b>TS_51_TC_03_Verify_Other_Things_To_Consider_Bullet_Points_Must_be_visible</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>4</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_06_Verify_click_On_Next_Btn_to_Go_To_FamilyDetails_Page()'><b>TS_51_TC_06_Verify_click_On_Next_Btn_to_Go_To_FamilyDetails_Page</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>2</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_07_Check_Self_Dependent_Tile_must_have_dateOfBirth_Relationship_AND_Name()'><b>TS_51_TC_07_Check_Self_Dependent_Tile_must_have_dateOfBirth_Relationship_AND_Name</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>2</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_08_Check_Header_In_FamilyDetails_Page_And_Click_On_Add_Dependent()'><b>TS_51_TC_08_Check_Header_In_FamilyDetails_Page_And_Click_On_Add_Dependent</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_09_Click_On_CloseBtn_In_Add_DependentPage()'><b>TS_51_TC_09_Click_On_CloseBtn_In_Add_DependentPage</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_10_Click_On_AcceptBtn_In_Add_DependentPage()'><b>TS_51_TC_10_Click_On_AcceptBtn_In_Add_DependentPage</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_11_Verify_NameBoxBlank_AndLastNameBox_Blank_ShouldThrow_AlertMessage()'><b>TS_51_TC_11_Verify_NameBoxBlank_AndLastNameBox_Blank_ShouldThrow_AlertMessage</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>2</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_12_To_validate_SSN_Wrong_Number_locator()'><b>TS_51_TC_12_To_validate_SSN_Wrong_Number_locator</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_13_To_validate_SSN_WrongSerialNumber_locator()'><b>TS_51_TC_13_To_validate_SSN_WrongSerialNumber_locator</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>2</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_14_To_validate_SSN_CorrectNumber_locator()'><b>TS_51_TC_14_To_validate_SSN_CorrectNumber_locator</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>2</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_15_To_validate_Date_Of_Birth_Wrong_locator()'><b>TS_51_TC_15_To_validate_Date_Of_Birth_Wrong_locator</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_16_To_validate_Date_Of_Birth_120yearabove_Negative_case_locator()'><b>TS_51_TC_16_To_validate_Date_Of_Birth_120yearabove_Negative_case_locator</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_17_To_validate_Correct_Date_Of_Birth()'><b>TS_51_TC_17_To_validate_Correct_Date_Of_Birth</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_19_Verify_RetirementDropdownBoxBlank_AndGenderDropdownBoxBlank_And_CountryDropdownBoxBlank_ShouldThrow_AlertMessage()'><b>TS_51_TC_19_Verify_RetirementDropdownBoxBlank_AndGenderDropdownBoxBlank_And_CountryDropdownBoxBlank_ShouldThrow_AlertMessage</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>2</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_20_Verify_LiveAt_SameAddress_FieldBox_Should_HaveAutometicallypopulatedProfileSectionData()'><b>TS_51_TC_20_Verify_LiveAt_SameAddress_FieldBox_Should_HaveAutometicallypopulatedProfileSectionData</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_21_Verify_selectCountry_Canada_then_AccordinglyTheir_province_ShouldvisibleAndWorking_Also_Currosponding_ValidZipCodeShouldbeTestedInZipCodeField()'><b>TS_51_TC_21_Verify_selectCountry_Canada_then_AccordinglyTheir_province_ShouldvisibleAndWorking_Also_Currosponding_ValidZipCodeShouldbeTestedInZipCodeField</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>6</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_22_Verify_selectCountry_UnitedState_then_AccordinglyTheir_State_ShouldvisibleAndWorking_Also_Currosponding_ValidZipCodeShouldbeTestedInZipCodeField()'><b>TS_51_TC_22_Verify_selectCountry_UnitedState_then_AccordinglyTheir_State_ShouldvisibleAndWorking_Also_Currosponding_ValidZipCodeShouldbeTestedInZipCodeField</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>5</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_23_Verify_City_Afddress1_Blank_ShouldThrow_AlertMessage()'><b>TS_51_TC_23_Verify_City_Afddress1_Blank_ShouldThrow_AlertMessage</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>1</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_24_Verify_Fill_Correct_AddIndividuals_data_AndVerify_If_ableToAdd_Bneficiery_ORNOT()'><b>TS_51_TC_24_Verify_Fill_Correct_AddIndividuals_data_AndVerify_If_ableToAdd_Bneficiery_ORNOT</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>17</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_25_Verify__filled_Details_must_be_Populated_in_Added_Dependent_Tile()'><b>TS_51_TC_25_Verify__filled_Details_must_be_Populated_in_Added_Dependent_Tile</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_26_Verify_View_Details_Btn_And_ALL_filled_Details_must_be_Populated_in_View_Detail_Page()'><b>TS_51_TC_26_Verify_View_Details_Btn_And_ALL_filled_Details_must_be_Populated_in_View_Detail_Page</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_27_Verify_Click_on_MyInfo_Tab()'><b>TS_51_TC_27_Verify_Click_on_MyInfo_Tab</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>47</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_28_Verify_Participant_name_Must_be_Correct_And_Address_In_MyInfo_Tab_must_be_matched_with_MyAccount_personalInfo_page_Details()'><b>TS_51_TC_28_Verify_Participant_name_Must_be_Correct_And_Address_In_MyInfo_Tab_must_be_matched_with_MyAccount_personalInfo_page_Details</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_29_Verify_DateOfBirth_AND_MaritalStatus_must_match_with_MyAccountPersonalInfoSection()'><b>TS_51_TC_29_Verify_DateOfBirth_AND_MaritalStatus_must_match_with_MyAccountPersonalInfoSection</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_30_Click_On_Edit_Btn_in_MyInfo_page()'><b>TS_51_TC_30_Click_On_Edit_Btn_in_MyInfo_page</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_31_Verify_Contact_Email_AND_Personal_Email_Must_Match_With_MyAccount_PersoanlInfo()'><b>TS_51_TC_31_Verify_Contact_Email_AND_Personal_Email_Must_Match_With_MyAccount_PersoanlInfo</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_32_Verify_Contact_Email1__wrong_Email_Entered_Alert_Message()'><b>TS_51_TC_32_Verify_Contact_Email1__wrong_Email_Entered_Alert_Message</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_33_Verify_Contact_Email_2_wrong_Email_Entered_Alert_Message()'><b>TS_51_TC_33_Verify_Contact_Email_2_wrong_Email_Entered_Alert_Message</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_34_Verify_Personal_Email_wrong_Email_Entered_Alert_Message()'><b>TS_51_TC_34_Verify_Personal_Email_wrong_Email_Entered_Alert_Message</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_35_Verify_Enter_Wrong_Work_phone_FieldBox()'><b>TS_51_TC_35_Verify_Enter_Wrong_Work_phone_FieldBox</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_36_Verify_Enter_Wrong_mobile_phone_FieldBox()'><b>TS_51_TC_36_Verify_Enter_Wrong_mobile_phone_FieldBox</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_37_Verify_Enter_Wrong_Home_phone_FieldBox()'><b>TS_51_TC_37_Verify_Enter_Wrong_Home_phone_FieldBox</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>3</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_38_Verify_Select_CheckBox_Question_YesNo()'><b>TS_51_TC_38_Verify_Select_CheckBox_Question_YesNo</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>3</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_39_Verify_Click_On_UpdateBtn()'><b>TS_51_TC_39_Verify_Click_On_UpdateBtn</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>4</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_41_to_verify_user_able_to_click_Print_Button_Life_Events_Summary_Page_tab1()'><b>TS_51_TC_41_to_verify_user_able_to_click_Print_Button_Life_Events_Summary_Page_tab1</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td></td>
+<td>0</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_42_to_verify_Size_And_text_of_Sub_tab_Summary_Page_()'><b>TS_51_TC_42_to_verify_Size_And_text_of_Sub_tab_Summary_Page_</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;table table-dark table-cost-summary&apos;]/thead/tr/th&quot;}
+  (Session info: MicrosoftEdge=121.0.2277.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3a29c3c12abafefb97b880a769ab0822, findElement {value=//*[@class=&apos;table table-dark table-cost-summary&apos;]/thead/tr/th, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51374}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\PRADEE~1.NAY\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51374/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a29c3c12abafefb97b880a769ab0822
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at HB_Active_PPT_PageObjects.LifeEvent_Summary_YourCoveragePreview_PageObject.footer_dark_table_cost_summary_header_Size(LifeEvent_Summary_YourCoveragePreview_PageObject.java:94)
+	at HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_42_to_verify_Size_And_text_of_Sub_tab_Summary_Page_(HB_New_Hire_LifeEvent_TestCase.java:1744)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1252678454", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1252678454'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;table table-dark table-cost-summary&apos;]/thead/tr/th&quot;}
+  (Session info: MicrosoftEdge=121.0.2277.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3a29c3c12abafefb97b880a769ab0822, findElement {value=//*[@class=&apos;table table-dark table-cost-summary&apos;]/thead/tr/th, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51374}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\PRADEE~1.NAY\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51374/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a29c3c12abafefb97b880a769ab0822
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at HB_Active_PPT_PageObjects.LifeEvent_Summary_YourCoveragePreview_PageObject.footer_dark_table_cost_summary_header_Size(LifeEvent_Summary_YourCoveragePreview_PageObject.java:94)
+	at HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_42_to_verify_Size_And_text_of_Sub_tab_Summary_Page_(HB_New_Hire_LifeEvent_TestCase.java:1744)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>5</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+<tr>
+<td title='HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_43_to_verify_Dependent_table_name_Self()'><b>TS_51_TC_43_to_verify_Dependent_table_name_Self</b><br>Test class: HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;table table-accordion table-dependents-coverage&apos;]/tbody[1]/tr[1]/td[3]/span&quot;}
+  (Session info: MicrosoftEdge=121.0.2277.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3a29c3c12abafefb97b880a769ab0822, findElement {value=//*[@class=&apos;table table-accordion table-dependents-coverage&apos;]/tbody[1]/tr[1]/td[3]/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51374}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\PRADEE~1.NAY\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51374/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a29c3c12abafefb97b880a769ab0822
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at HB_Active_PPT_PageObjects.LifeEvent_Summary_YourCoveragePreview_PageObject.table_body_first_row_3rd_column_data_tex_Name(LifeEvent_Summary_YourCoveragePreview_PageObject.java:251)
+	at HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_43_to_verify_Dependent_table_name_Self(HB_New_Hire_LifeEvent_TestCase.java:1768)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1886247860", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1886247860'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;table table-accordion table-dependents-coverage&apos;]/tbody[1]/tr[1]/td[3]/span&quot;}
+  (Session info: MicrosoftEdge=121.0.2277.112)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [3a29c3c12abafefb97b880a769ab0822, findElement {value=//*[@class=&apos;table table-accordion table-dependents-coverage&apos;]/tbody[1]/tr[1]/td[3]/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 121.0.2277.112, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:51374}, msedge: {msedgedriverVersion: 121.0.2277.128 (33d347b6876..., userDataDir: C:\Users\PRADEE~1.NAY\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51374/devtoo..., se:cdpVersion: 121.0.2277.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a29c3c12abafefb97b880a769ab0822
+	at jdk.internal.reflect.GeneratedConstructorAccessor27.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at HB_Active_PPT_PageObjects.LifeEvent_Summary_YourCoveragePreview_PageObject.table_body_first_row_3rd_column_data_tex_Name(LifeEvent_Summary_YourCoveragePreview_PageObject.java:251)
+	at HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase.TS_51_TC_43_to_verify_Dependent_table_name_Self(HB_New_Hire_LifeEvent_TestCase.java:1768)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>5</td>
+<td>HB_New_Hire_LifeEvent_Test.HB_New_Hire_LifeEvent_TestCase@12d2ce03</td></tr>
+</table><p>
+</body>
+</html>

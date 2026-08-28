@@ -1,0 +1,726 @@
+<html>
+<head>
+<title>TestNG:  HB_Active_MyAccount_LifeEvents_Model_page_Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>HB_Active_MyAccount_LifeEvents_Model_page_Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>103/1/1</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 31 21:21:29 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>332 seconds (332064 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>All HB_Active_PPT_TestCases </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Verify_DateOfBirth_AND_MaritalStatus_must_match_with_MyAccountPersonalInfoSection()'><b>Verify_DateOfBirth_AND_MaritalStatus_must_match_with_MyAccountPersonalInfoSection</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Marital_Status_PersonalInfo_MyAccount_Page_getText matched with LE expected [] but found [NOMARITAL]
+	at HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Verify_DateOfBirth_AND_MaritalStatus_must_match_with_MyAccountPersonalInfoSection(Life_Event_BirthAdoptions_Test_cases.java:1627)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1569605999", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1569605999'><pre>java.lang.AssertionError: The following asserts failed:
+	Marital_Status_PersonalInfo_MyAccount_Page_getText matched with LE expected [] but found [NOMARITAL]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Verify_DateOfBirth_AND_MaritalStatus_must_match_with_MyAccountPersonalInfoSection(Life_Event_BirthAdoptions_Test_cases.java:1627)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Click_On_Edit_Btn_in_MyInfo_page()'><b>Click_On_Edit_Btn_in_MyInfo_page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_05_TC_05_to_verify_user_able_to_switch_tabs_from_one_tab_another_Health_care()'><b>TS_05_TC_05_to_verify_user_able_to_switch_tabs_from_one_tab_another_Health_care</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Check_Header_In_FamilyDetails_Page_And_Click_On_Add_Dependent()'><b>TS_09_TC_01_Check_Header_In_FamilyDetails_Page_And_Click_On_Add_Dependent</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Click_On_AcceptBtn_In_Add_DependentPage()'><b>TS_09_TC_01_Click_On_AcceptBtn_In_Add_DependentPage</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Click_On_CloseBtn_In_Add_DependentPage()'><b>TS_09_TC_01_Click_On_CloseBtn_In_Add_DependentPage</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Clieck_On_Model_Birth_Event()'><b>TS_09_TC_01_Clieck_On_Model_Birth_Event</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Verify_Aditional_Card_Tile()'><b>TS_09_TC_01_Verify_Aditional_Card_Tile</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Verify_After_Entering_Event_Date_1900YEAR_In_Event_Date_FieldBox_in_Birth_Adoption_Event_GetStarted_Page_Then_Alert_Error_Message_Must_be_visible()'><b>TS_09_TC_01_Verify_After_Entering_Event_Date_1900YEAR_In_Event_Date_FieldBox_in_Birth_Adoption_Event_GetStarted_Page_Then_Alert_Error_Message_Must_be_visible</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>3</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Verify_Alpha_Numeric_FieldBox_ByEntering_correct_length_of_Input_and_InvalidLength_of_Input()'><b>TS_09_TC_01_Verify_Alpha_Numeric_FieldBox_ByEntering_correct_length_of_Input_and_InvalidLength_of_Input</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Verify_Click_on_GetStarted_btn_And_Verify_Alert_Error_Message_As_we_have_Entered_1900_As_Date_Year_In_EventDate()'><b>TS_09_TC_01_Verify_Click_on_GetStarted_btn_And_Verify_Alert_Error_Message_As_we_have_Entered_1900_As_Date_Year_In_EventDate</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>3</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Verify_Date_Field_AND_Numeric_Field_All_Keep_Blank_then_Alert_Error_Message_should_throw()'><b>TS_09_TC_01_Verify_Date_Field_AND_Numeric_Field_All_Keep_Blank_then_Alert_Error_Message_should_throw</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Verify_Entering_Event_Correct_Date_In_Event_Date_FieldBox_in_Birth_Adoption_Event_GetStarted_Page()'><b>TS_09_TC_01_Verify_Entering_Event_Correct_Date_In_Event_Date_FieldBox_in_Birth_Adoption_Event_GetStarted_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>35</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Verify_Entering_Event_Date_In_Event_Date_FieldBox()'><b>TS_09_TC_01_Verify_Entering_Event_Date_In_Event_Date_FieldBox</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Verify_Entering_Event_Date_In_Event_Date_FieldBox_in_Birth_Adoption_Event_GetStarted_Page()'><b>TS_09_TC_01_Verify_Entering_Event_Date_In_Event_Date_FieldBox_in_Birth_Adoption_Event_GetStarted_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Verify_EventDate_Field_AND_AlphaNumeric_Field_All_Keep_Blank_then_Alert_Error_Message_should_throw()'><b>TS_09_TC_01_Verify_EventDate_Field_AND_AlphaNumeric_Field_All_Keep_Blank_then_Alert_Error_Message_should_throw</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Verify_Forms_And_Docume_Card_Tile()'><b>TS_09_TC_01_Verify_Forms_And_Docume_Card_Tile</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Verify_GetStarted_Btn_Must_Be_disable_as_Have_Not_Filled_All_Data()'><b>TS_09_TC_01_Verify_GetStarted_Btn_Must_Be_disable_as_Have_Not_Filled_All_Data</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Verify_LifeEvents_Dashboard_page()'><b>TS_09_TC_01_Verify_LifeEvents_Dashboard_page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Verify_Numeric_FieldBox_ByEntering_correct_length_of_Input_and_InvalidLength_of_Input()'><b>TS_09_TC_01_Verify_Numeric_FieldBox_ByEntering_correct_length_of_Input_and_InvalidLength_of_Input</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Verify_Other_Things_To_Consider_Bullet_Points_Must_be_visible()'><b>TS_09_TC_01_Verify_Other_Things_To_Consider_Bullet_Points_Must_be_visible</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>3</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Verify__Date_Field()'><b>TS_09_TC_01_Verify__Date_Field</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Verify_click_On_Next_Btn_to_Go_To_FamilyDetails_Page()'><b>TS_09_TC_01_Verify_click_On_Next_Btn_to_Go_To_FamilyDetails_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_Verify_click_on_getStarted_in_LifeEvent_page()'><b>TS_09_TC_01_Verify_click_on_getStarted_in_LifeEvent_page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_09_TC_01_to_verify_Click_ON_LifeEvent_DropdownOption_In_MyAccountTab()'><b>TS_09_TC_01_to_verify_Click_ON_LifeEvent_DropdownOption_In_MyAccountTab</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases<br>Parameters: mbctra0049@lifeworks.com, Welcome1!</td>
+<td></td>
+<td>52</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_03_to_verify_user_able_to_Land_on_Life_Events_Summary_Page()'><b>TS_49_TC_03_to_verify_user_able_to_Land_on_Life_Events_Summary_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>10</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_04_to_verify_user_able_to_click_Print_Button_Life_Events_Summary_Page_tab1()'><b>TS_49_TC_04_to_verify_user_able_to_click_Print_Button_Life_Events_Summary_Page_tab1</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_05_to_verify_Size_And_text_of_Sub_tab_Summary_Page_()'><b>TS_49_TC_05_to_verify_Size_And_text_of_Sub_tab_Summary_Page_</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_06_to_verify_user_able_to_switch_tabs_from_one_tab_another()'><b>TS_49_TC_06_to_verify_user_able_to_switch_tabs_from_one_tab_another</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_07_to_verify_Dependent_table_name_Self()'><b>TS_49_TC_07_to_verify_Dependent_table_name_Self</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_08__to_verify_Dependent_table_Self_DOB()'><b>TS_49_TC_08__to_verify_Dependent_table_Self_DOB</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_09_to_verify_if_user_Select_Medical_Plan_then_tick_Mark_Should_be_there_else_not()'><b>TS_49_TC_09_to_verify_if_user_Select_Medical_Plan_then_tick_Mark_Should_be_there_else_not</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_10_to_verify_if_user_Select_Dental_Plan_then_tick_Mark_Should_be_there_else_not()'><b>TS_49_TC_10_to_verify_if_user_Select_Dental_Plan_then_tick_Mark_Should_be_there_else_not</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_11_to_verify_if_user_Select_Vision_Plan_then_tick_Mark_Should_be_there_else_not()'><b>TS_49_TC_11_to_verify_if_user_Select_Vision_Plan_then_tick_Mark_Should_be_there_else_not</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_12_to_verify_user_able_to_redirect_to_correctPage_After_Clicking_Edit_Button_in_Available_to_be_updated_Sections_Palte()'><b>TS_49_TC_12_to_verify_user_able_to_redirect_to_correctPage_After_Clicking_Edit_Button_in_Available_to_be_updated_Sections_Palte</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_13_to_verify_user_able_to_redirect_to_correctPage_After_Clicking_Edit_Button_in_Waved_Benefits_Plate()'><b>TS_49_TC_13_to_verify_user_able_to_redirect_to_correctPage_After_Clicking_Edit_Button_in_Waved_Benefits_Plate</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_14_to_verify_data_Present_in_Plates_or_not_in_Available_to_be_updated_Sections_Palte()'><b>TS_49_TC_14_to_verify_data_Present_in_Plates_or_not_in_Available_to_be_updated_Sections_Palte</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_14_to_verify_footer_dark_table_details()'><b>TS_49_TC_14_to_verify_footer_dark_table_details</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_15_to_verify_data_Present_in_Plates_or_not_in_Waved_Benefits_Plate_Sections()'><b>TS_49_TC_15_to_verify_data_Present_in_Plates_or_not_in_Waved_Benefits_Plate_Sections</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_16_to_verify_user_able_to_click_Print_Button_Life_Events_Summary_Page_tab2_2023_coverage()'><b>TS_49_TC_16_to_verify_user_able_to_click_Print_Button_Life_Events_Summary_Page_tab2_2023_coverage</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_17_to_verify_Dependent_table_name_Self_matched_or_not_2023()'><b>TS_49_TC_17_to_verify_Dependent_table_name_Self_matched_or_not_2023</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_18__to_verify_Dependent_table_Self_DOB_matched_or_not_2023()'><b>TS_49_TC_18__to_verify_Dependent_table_Self_DOB_matched_or_not_2023</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_19_to_verify_if_user_Select_Medical_Plan_then_tick_Mark_Should_be_there_else_not_tab_2023()'><b>TS_49_TC_19_to_verify_if_user_Select_Medical_Plan_then_tick_Mark_Should_be_there_else_not_tab_2023</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_20_to_verify_if_user_Select_Dental_Plan_then_tick_Mark_Should_be_there_else_not_tab_2023()'><b>TS_49_TC_20_to_verify_if_user_Select_Dental_Plan_then_tick_Mark_Should_be_there_else_not_tab_2023</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_21_to_verify_if_user_Select_Medical_Plan_then_tick_Mark_Should_be_there_else_not_tab_2023()'><b>TS_49_TC_21_to_verify_if_user_Select_Medical_Plan_then_tick_Mark_Should_be_there_else_not_tab_2023</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_22_to_verify_user_able_to_redirect_to_correctPage_After_Clicking_Edit_Button_of_tab_2_Plates_2023_coverage()'><b>TS_49_TC_22_to_verify_user_able_to_redirect_to_correctPage_After_Clicking_Edit_Button_of_tab_2_Plates_2023_coverage</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_49_TC_23_to_verify_footer_dark_table_details_tab_2_Plates_2023_coverage()'><b>TS_49_TC_23_to_verify_footer_dark_table_details_tab_2_Plates_2023_coverage</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_50_TC_01_to_verify_user_able_to_Land_on_LifeEvents_Health_Page()'><b>TS_50_TC_01_to_verify_user_able_to_Land_on_LifeEvents_Health_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>16</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_50_TC_02_to_verify_user_able_to_Edit_Medical_Plan_if_its_Editable_For_Employee_only()'><b>TS_50_TC_02_to_verify_user_able_to_Edit_Medical_Plan_if_its_Editable_For_Employee_only</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_50_TC_03_to_verify_user_able_to_Edit_Dental_Plan_if_its_Editable()'><b>TS_50_TC_03_to_verify_user_able_to_Edit_Dental_Plan_if_its_Editable</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_50_TC_04_to_verify_user_able_to_Edit_Vison_Plan_if_its_Editable()'><b>TS_50_TC_04_to_verify_user_able_to_Edit_Vison_Plan_if_its_Editable</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_50_TC_06_to_verify_user_abale_to_comapre_Plan_Health_care_Page()'><b>TS_50_TC_06_to_verify_user_abale_to_comapre_Plan_Health_care_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_50_TC_07_to_verify_user_abale_to_use_Help_me_decide_Feature_Health_Care_Page()'><b>TS_50_TC_07_to_verify_user_abale_to_use_Help_me_decide_Feature_Health_Care_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_50_TC_08_to_verify_when_user_select_HDHP_Plan_then_HSA_Popup_Should_Open_and_Click_NotNow_Button()'><b>TS_50_TC_08_to_verify_when_user_select_HDHP_Plan_then_HSA_Popup_Should_Open_and_Click_NotNow_Button</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_50_TC_09_to_verify_update_eligibility_appearing_on_Spending_Account_Page()'><b>TS_50_TC_09_to_verify_update_eligibility_appearing_on_Spending_Account_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_50_TC_10_to_verify_HSA_Popup_Appear_on_complete_Enrolment_Page_when_Selected_earlier_NotNow()'><b>TS_50_TC_10_to_verify_HSA_Popup_Appear_on_complete_Enrolment_Page_when_Selected_earlier_NotNow</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_50_TC_11_to_verify_user_able_to_Select_No_Coverage_For_Vision_Plan_Health_Care_Page()'><b>TS_50_TC_11_to_verify_user_able_to_Select_No_Coverage_For_Vision_Plan_Health_Care_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_50_TC_12_to_verify_to_verify_HSA_Positive_flow_without_DSD()'><b>TS_50_TC_12_to_verify_to_verify_HSA_Positive_flow_without_DSD</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_50_TC_13_to_verify_HSA_Flow_By_Selecting_NotNow()'><b>TS_50_TC_13_to_verify_HSA_Flow_By_Selecting_NotNow</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_50_TC_14_to_verify_HSA_Flow_by_Select_Next_And_Making_Uneligible()'><b>TS_50_TC_14_to_verify_HSA_Flow_by_Select_Next_And_Making_Uneligible</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_50_TC_15_to_verify_HSA_Flow_Making_Eligle_With_DSD()'><b>TS_50_TC_15_to_verify_HSA_Flow_Making_Eligle_With_DSD</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_51_TC_01_to_verify_user_able_to_Land_on_LifeEvents_Complete_Enrollment_Page()'><b>TS_51_TC_01_to_verify_user_able_to_Land_on_LifeEvents_Complete_Enrollment_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_51_TC_02_to_verify_user_able_to_click_Print_Button_Life_Events_Complete_Enrollment_Page()'><b>TS_51_TC_02_to_verify_user_able_to_click_Print_Button_Life_Events_Complete_Enrollment_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_51_TC_03_to_verify_Dependent_table_name_Self_Complete_Enrollment_Page()'><b>TS_51_TC_03_to_verify_Dependent_table_name_Self_Complete_Enrollment_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_51_TC_04__to_verify_Dependent_table_Self_DOB_Complete_Enrollment_Page()'><b>TS_51_TC_04__to_verify_Dependent_table_Self_DOB_Complete_Enrollment_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_51_TC_05__to_verify_Dependent_table_Self_DOB_Complete_Enrollment_Page()'><b>TS_51_TC_05__to_verify_Dependent_table_Self_DOB_Complete_Enrollment_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_51_TC_05__to_verify_user_able_to_Select_Check_Box()'><b>TS_51_TC_05__to_verify_user_able_to_Select_Check_Box</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_51_TC_06__to_verify_Availabel_to_be_updates_tile_Edit_button_are_redirect_or_not()'><b>TS_51_TC_06__to_verify_Availabel_to_be_updates_tile_Edit_button_are_redirect_or_not</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_51_TC_07__to_verify_Waived_Benefits_tile_Edit_button_are_redirect_or_not()'><b>TS_51_TC_07__to_verify_Waived_Benefits_tile_Edit_button_are_redirect_or_not</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_51_TC_08__to_verify_footer_Complete_Enrollment_Button_disable_or_not_when_Check_box_unchecked()'><b>TS_51_TC_08__to_verify_footer_Complete_Enrollment_Button_disable_or_not_when_Check_box_unchecked</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_51_TC_09__to_verify_footer_Complete_Enrollment_Button_Enabled_or_not_when_Check_box_is_checked()'><b>TS_51_TC_09__to_verify_footer_Complete_Enrollment_Button_Enabled_or_not_when_Check_box_is_checked</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_51_TC_10__to_verify_footer_Cancel_Life_Event_button()'><b>TS_51_TC_10__to_verify_footer_Cancel_Life_Event_button</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_51_TC_11__to_verify_footer_Back_Button()'><b>TS_51_TC_11__to_verify_footer_Back_Button</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_51_TC_12__to_verify_user_able_to_Complete_Birth_Adoption_Life_Event()'><b>TS_51_TC_12__to_verify_user_able_to_Complete_Birth_Adoption_Life_Event</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_52_TC_01_to_verify_user_able_to_Land_on_LifeEvents_SpendingAccount_Page()'><b>TS_52_TC_01_to_verify_user_able_to_Land_on_LifeEvents_SpendingAccount_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>12</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_52_TC_02__to_verify_all_the_elements_Present_in_Spending_Account_Page()'><b>TS_52_TC_02__to_verify_all_the_elements_Present_in_Spending_Account_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_52_TC_03__to_verify_all_the_Links_Present_on_Page_ore_broken_or_not()'><b>TS_52_TC_03__to_verify_all_the_Links_Present_on_Page_ore_broken_or_not</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_53_TC_01_to_verify_user_able_to_Land_on_LifeEvents_insurance_Coverage_Page()'><b>TS_53_TC_01_to_verify_user_able_to_Land_on_LifeEvents_insurance_Coverage_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>8</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_53_TC_02__to_verify_all_the_elements_Present_in_Disablity_Page()'><b>TS_53_TC_02__to_verify_all_the_elements_Present_in_Disablity_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_53_TC_03__to_verify_all_the_Links_Present_on_Page_are_broken_or_not_Disability_Page()'><b>TS_53_TC_03__to_verify_all_the_Links_Present_on_Page_are_broken_or_not_Disability_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_53_TC_04__to_verify_all_the_elements_Present_in_Life_Page()'><b>TS_53_TC_04__to_verify_all_the_elements_Present_in_Life_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_53_TC_05__to_verify_all_the_Links_Present_on_Page_are_broken_or_not_life_Page()'><b>TS_53_TC_05__to_verify_all_the_Links_Present_on_Page_are_broken_or_not_life_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.To_validate_Correct_Date_Of_Birth()'><b>To_validate_Correct_Date_Of_Birth</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.To_validate_Date_Of_Birth_120yearabove_Negative_case_locator()'><b>To_validate_Date_Of_Birth_120yearabove_Negative_case_locator</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.To_validate_Date_Of_Birth_Wrong_locator()'><b>To_validate_Date_Of_Birth_Wrong_locator</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.To_validate_SSN_CorrectNumber_locator()'><b>To_validate_SSN_CorrectNumber_locator</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.To_validate_SSN_WrongSerialNumber_locator()'><b>To_validate_SSN_WrongSerialNumber_locator</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.To_validate_SSN_Wrong_Number_locator()'><b>To_validate_SSN_Wrong_Number_locator</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Verify_City_Afddress1_Blank_ShouldThrow_AlertMessage()'><b>Verify_City_Afddress1_Blank_ShouldThrow_AlertMessage</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Verify_Click_on_MyInfo_Tab()'><b>Verify_Click_on_MyInfo_Tab</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>40</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Verify_Contact_Email1__wrong_Email_Entered_Alert_Message()'><b>Verify_Contact_Email1__wrong_Email_Entered_Alert_Message</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Verify_Contact_Email_2_wrong_Email_Entered_Alert_Message()'><b>Verify_Contact_Email_2_wrong_Email_Entered_Alert_Message</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Verify_Contact_Email_AND_Personal_Email_Must_Match_With_MyAccount_PersoanlInfo()'><b>Verify_Contact_Email_AND_Personal_Email_Must_Match_With_MyAccount_PersoanlInfo</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Verify_Enter_Wrong_Home_phone_FieldBox()'><b>Verify_Enter_Wrong_Home_phone_FieldBox</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Verify_Enter_Wrong_Work_phone_FieldBox()'><b>Verify_Enter_Wrong_Work_phone_FieldBox</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Verify_Enter_Wrong_mobile_phone_FieldBox()'><b>Verify_Enter_Wrong_mobile_phone_FieldBox</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Verify_Fill_Correct_AddIndividuals_data_AndVerify_If_ableToAdd_Bneficiery_ORNOT()'><b>Verify_Fill_Correct_AddIndividuals_data_AndVerify_If_ableToAdd_Bneficiery_ORNOT</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>17</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Verify_LiveAt_SameAddress_FieldBox_Should_HaveAutometicallypopulatedProfileSectionData()'><b>Verify_LiveAt_SameAddress_FieldBox_Should_HaveAutometicallypopulatedProfileSectionData</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Verify_NameBoxBlank_AndLastNameBox_Blank_ShouldThrow_AlertMessage()'><b>Verify_NameBoxBlank_AndLastNameBox_Blank_ShouldThrow_AlertMessage</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Verify_Personal_Email_wrong_Email_Entered_Alert_Message()'><b>Verify_Personal_Email_wrong_Email_Entered_Alert_Message</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Verify_RetirementDropdownBoxBlank_AndGenderDropdownBoxBlank_And_CountryDropdownBoxBlank_ShouldThrow_AlertMessage()'><b>Verify_RetirementDropdownBoxBlank_AndGenderDropdownBoxBlank_And_CountryDropdownBoxBlank_ShouldThrow_AlertMessage</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Verify_Select_CheckBox_Question_YesNo()'><b>Verify_Select_CheckBox_Question_YesNo</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Verify_selectCountry_Canada_then_AccordinglyTheir_province_ShouldvisibleAndWorking_Also_Currosponding_ValidZipCodeShouldbeTestedInZipCodeField()'><b>Verify_selectCountry_Canada_then_AccordinglyTheir_province_ShouldvisibleAndWorking_Also_Currosponding_ValidZipCodeShouldbeTestedInZipCodeField</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>6</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.Verify_selectCountry_UnitedState_then_AccordinglyTheir_State_ShouldvisibleAndWorking_Also_Currosponding_ValidZipCodeShouldbeTestedInZipCodeField()'><b>Verify_selectCountry_UnitedState_then_AccordinglyTheir_State_ShouldvisibleAndWorking_Also_Currosponding_ValidZipCodeShouldbeTestedInZipCodeField</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td></td>
+<td>5</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_50_TC_09_to_verify_update_eligibility_appearing_on_Spending_Account_Page()'><b>TS_50_TC_09_to_verify_update_eligibility_appearing_on_Spending_Account_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@data-bo-html=&apos;content.ButtonText&apos;]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb37eb6646465e68b604be4efc0773e1, findElement {using=xpath, value=//*[@data-bo-html=&apos;content.ButtonText&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\NANDAN~1.GUP\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49782}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49782/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb37eb6646465e68b604be4efc0773e1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at HB_Active_PPT_PageObjects.LifeEvent_SpendingAccounts_PageObject.Spending_Account_Page_top_Update_Eligibility_text(LifeEvent_SpendingAccounts_PageObject.java:40)
+	at HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_50_TC_09_to_verify_update_eligibility_appearing_on_Spending_Account_Page(Life_Event_BirthAdoptions_Test_cases.java:2625)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1916060240", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1916060240'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@data-bo-html=&apos;content.ButtonText&apos;]&quot;}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb37eb6646465e68b604be4efc0773e1, findElement {using=xpath, value=//*[@data-bo-html=&apos;content.ButtonText&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\NANDAN~1.GUP\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:49782}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49782/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bb37eb6646465e68b604be4efc0773e1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at HB_Active_PPT_PageObjects.LifeEvent_SpendingAccounts_PageObject.Spending_Account_Page_top_Update_Eligibility_text(LifeEvent_SpendingAccounts_PageObject.java:40)
+	at HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases.TS_50_TC_09_to_verify_update_eligibility_appearing_on_Spending_Account_Page(Life_Event_BirthAdoptions_Test_cases.java:2625)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>51</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_Test_cases@42b3b079</td></tr>
+</table><p>
+</body>
+</html>

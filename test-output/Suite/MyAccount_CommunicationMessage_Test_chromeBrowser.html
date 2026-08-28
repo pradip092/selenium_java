@@ -1,0 +1,195 @@
+<html>
+<head>
+<title>TestNG:  MyAccount_CommunicationMessage_Test_chromeBrowser</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>MyAccount_CommunicationMessage_Test_chromeBrowser</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Aug 22 19:42:31 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>173 seconds (173139 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>All DB_PPT_CommonTestCases </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases.TS_02_TC_12_to_verify_user_able_to_change_the_staus_Of_open_message_to_closed_by_Clicking_Mark_Complete()'><b>TS_02_TC_12_to_verify_user_able_to_change_the_staus_Of_open_message_to_closed_by_Clicking_Mark_Complete</b><br>Test class: DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases.TS_02_TC_12_to_verify_user_able_to_change_the_staus_Of_open_message_to_closed_by_Clicking_Mark_Complete(MyAccount_Communication_MessageCenter_TestCases.java:709)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace872396612", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace872396612'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases.TS_02_TC_12_to_verify_user_able_to_change_the_staus_Of_open_message_to_closed_by_Clicking_Mark_Complete(MyAccount_Communication_MessageCenter_TestCases.java:709)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>23</td>
+<td>DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases@6531a794</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases.TS_02_TC_01_to_verify_user_able_to_Login_MPC_with_valid_credentilas()'><b>TS_02_TC_01_to_verify_user_able_to_Login_MPC_with_valid_credentilas</b><br>Test class: DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases<br>Parameters: MBCTRA3104@lifeworks.com, Welcome1!</td>
+<td></td>
+<td>58</td>
+<td>DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases@6531a794</td></tr>
+<tr>
+<td title='DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases.TS_02_TC_02_to_verify_user_able_to_click_MyAccount_Communications_Module()'><b>TS_02_TC_02_to_verify_user_able_to_click_MyAccount_Communications_Module</b><br>Test class: DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases</td>
+<td></td>
+<td>8</td>
+<td>DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases@6531a794</td></tr>
+<tr>
+<td title='DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases.TS_02_TC_03_to_verify_MyAccountCommunications_MessageCenter_SubTabs_Availabel_or_not()'><b>TS_02_TC_03_to_verify_MyAccountCommunications_MessageCenter_SubTabs_Availabel_or_not</b><br>Test class: DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases</td>
+<td></td>
+<td>2</td>
+<td>DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases@6531a794</td></tr>
+<tr>
+<td title='DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases.TS_02_TC_04_to_verify_user_able_to_create_new_message_From_MyAccount_Communication_MessageCenter()'><b>TS_02_TC_04_to_verify_user_able_to_create_new_message_From_MyAccount_Communication_MessageCenter</b><br>Test class: DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases</td>
+<td></td>
+<td>8</td>
+<td>DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases@6531a794</td></tr>
+<tr>
+<td title='DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases.TS_02_TC_05_to_verify_new_Message_created_Status_should_be_open_on_Message_tabel()'><b>TS_02_TC_05_to_verify_new_Message_created_Status_should_be_open_on_Message_tabel</b><br>Test class: DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases</td>
+<td></td>
+<td>3</td>
+<td>DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases@6531a794</td></tr>
+<tr>
+<td title='DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases.TS_02_TC_06_to_verify_When_user_Click_on_newly_created_Message_subject_Link_then_MessageDetails_Page_comes_or_not()'><b>TS_02_TC_06_to_verify_When_user_Click_on_newly_created_Message_subject_Link_then_MessageDetails_Page_comes_or_not</b><br>Test class: DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases</td>
+<td></td>
+<td>16</td>
+<td>DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases@6531a794</td></tr>
+<tr>
+<td title='DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases.TS_02_TC_07_to_verify_newly_Message_created_Message_details_data()'><b>TS_02_TC_07_to_verify_newly_Message_created_Message_details_data</b><br>Test class: DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases</td>
+<td></td>
+<td>2</td>
+<td>DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases@6531a794</td></tr>
+<tr>
+<td title='DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases.TS_02_TC_08_to_verify_newly_Message_created_Message_History_data()'><b>TS_02_TC_08_to_verify_newly_Message_created_Message_History_data</b><br>Test class: DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases</td>
+<td></td>
+<td>2</td>
+<td>DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases@6531a794</td></tr>
+<tr>
+<td title='DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases.TS_02_TC_09_to_verify_user_able_to_reply_On_newly_created_open_message_then_SuccesMessage_Should_display()'><b>TS_02_TC_09_to_verify_user_able_to_reply_On_newly_created_open_message_then_SuccesMessage_Should_display</b><br>Test class: DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases</td>
+<td></td>
+<td>11</td>
+<td>DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases@6531a794</td></tr>
+<tr>
+<td title='DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases.TS_02_TC_10_to_verify_Back_to_your_message_Link_Functionality()'><b>TS_02_TC_10_to_verify_Back_to_your_message_Link_Functionality</b><br>Test class: DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases</td>
+<td></td>
+<td>5</td>
+<td>DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases@6531a794</td></tr>
+<tr>
+<td title='DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases.TS_02_TC_11_to_verify_user_reply_Message_Data_Saved_or_Not()'><b>TS_02_TC_11_to_verify_user_reply_Message_Data_Saved_or_Not</b><br>Test class: DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases</td>
+<td></td>
+<td>18</td>
+<td>DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases@6531a794</td></tr>
+<tr>
+<td title='DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases.TS_02_TC_13_to_verify_Cancel_Button_Functionality()'><b>TS_02_TC_13_to_verify_Cancel_Button_Functionality</b><br>Test class: DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases</td>
+<td></td>
+<td>0</td>
+<td>DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases@6531a794</td></tr>
+<tr>
+<td title='DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases.TS_02_TC_14_to_verify_user_able_to_Click_PrintMessage_Button()'><b>TS_02_TC_14_to_verify_user_able_to_Click_PrintMessage_Button</b><br>Test class: DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases</td>
+<td></td>
+<td>0</td>
+<td>DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases@6531a794</td></tr>
+<tr>
+<td title='DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases.TS_02_TC_17_to_verify_user_unable_to_create_new_message_Without_Selecting_Mandatory_Field()'><b>TS_02_TC_17_to_verify_user_unable_to_create_new_message_Without_Selecting_Mandatory_Field</b><br>Test class: DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases</td>
+<td></td>
+<td>0</td>
+<td>DB_PPT_Common_TestCases.MyAccount_Communication_MessageCenter_TestCases@6531a794</td></tr>
+</table><p>
+</body>
+</html>

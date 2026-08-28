@@ -1,0 +1,1039 @@
+<html>
+<head>
+<title>TestNG:  HB_Active_MyAccount_LifeEvents_BirthAdoptions_Test_Cases_PPt1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>HB_Active_MyAccount_LifeEvents_BirthAdoptions_Test_Cases_PPt1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>109/4/2</td>
+</tr><tr>
+<td>Started on:</td><td>Wed May 01 22:17:52 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>627 seconds (627665 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>All HB_Active_PPT_TestCases </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_105_to_Verify_DSD_Flow_Eligible_PPT()'><b>TS_49_TC_105_to_Verify_DSD_Flow_Eligible_PPT</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;dst-hsa-recomendation-amount&apos;]&quot;}
+  (Session info: edge-headless-shell=124.0.2478.67)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [bf4f14e9e952dede5a4752555ee9b186, findElement {value=//*[@id=&apos;dst-hsa-recomendation-amount&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: edge-headless-shell, browserVersion: 124.0.2478.67, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57302}, msedge: {msedgedriverVersion: 124.0.2478.67 (d385ef2844e0..., userDataDir: C:\Users\NANDAN~1.GUP\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57302/devtoo..., se:cdpVersion: 124.0.2478.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf4f14e9e952dede5a4752555ee9b186
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at HB_Active_PPT_PageObjects.LifeEvent_HealthCare_Medical_PageObject.HSA_contribution_input_box_0_1950(LifeEvent_HealthCare_Medical_PageObject.java:348)
+	at HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_105_to_Verify_DSD_Flow_Eligible_PPT(Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.java:3834)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace791036159", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace791036159'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;dst-hsa-recomendation-amount&apos;]&quot;}
+  (Session info: edge-headless-shell=124.0.2478.67)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [bf4f14e9e952dede5a4752555ee9b186, findElement {value=//*[@id=&apos;dst-hsa-recomendation-amount&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: edge-headless-shell, browserVersion: 124.0.2478.67, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57302}, msedge: {msedgedriverVersion: 124.0.2478.67 (d385ef2844e0..., userDataDir: C:\Users\NANDAN~1.GUP\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57302/devtoo..., se:cdpVersion: 124.0.2478.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf4f14e9e952dede5a4752555ee9b186
+	at jdk.internal.reflect.GeneratedConstructorAccessor34.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at HB_Active_PPT_PageObjects.LifeEvent_HealthCare_Medical_PageObject.HSA_contribution_input_box_0_1950(LifeEvent_HealthCare_Medical_PageObject.java:348)
+	at HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_105_to_Verify_DSD_Flow_Eligible_PPT(Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.java:3834)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>33</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_123_to_verify_user_able_to_Complete_Birth_Adoption_Life_Event()'><b>TS_49_TC_123_to_verify_user_able_to_Complete_Birth_Adoption_Life_Event</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;complete-enrollment-id&apos;]&quot;}
+  (Session info: edge-headless-shell=124.0.2478.67)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [bf4f14e9e952dede5a4752555ee9b186, findElement {value=//button[@id=&apos;complete-enrollment-id&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: edge-headless-shell, browserVersion: 124.0.2478.67, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57302}, msedge: {msedgedriverVersion: 124.0.2478.67 (d385ef2844e0..., userDataDir: C:\Users\NANDAN~1.GUP\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57302/devtoo..., se:cdpVersion: 124.0.2478.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf4f14e9e952dede5a4752555ee9b186
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at HB_Active_PPT_PageObjects.LifeEvent_CompleteEnrollment_PageObject.complete_EnrollMent_Button(LifeEvent_CompleteEnrollment_PageObject.java:182)
+	at HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_123_to_verify_user_able_to_Complete_Birth_Adoption_Life_Event(Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.java:4222)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1564915660", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1564915660'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@id=&apos;complete-enrollment-id&apos;]&quot;}
+  (Session info: edge-headless-shell=124.0.2478.67)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [bf4f14e9e952dede5a4752555ee9b186, findElement {value=//button[@id=&apos;complete-enrollment-id&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: edge-headless-shell, browserVersion: 124.0.2478.67, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57302}, msedge: {msedgedriverVersion: 124.0.2478.67 (d385ef2844e0..., userDataDir: C:\Users\NANDAN~1.GUP\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57302/devtoo..., se:cdpVersion: 124.0.2478.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf4f14e9e952dede5a4752555ee9b186
+	at jdk.internal.reflect.GeneratedConstructorAccessor34.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at HB_Active_PPT_PageObjects.LifeEvent_CompleteEnrollment_PageObject.complete_EnrollMent_Button(LifeEvent_CompleteEnrollment_PageObject.java:182)
+	at HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_123_to_verify_user_able_to_Complete_Birth_Adoption_Life_Event(Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.java:4222)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>6</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_14_Verify_After_Entering_Event_Date_1900YEAR_In_Event_Date_FieldBox_in_Birth_Adoption_Event_GetStarted_Page_Then_Alert_Error_Message_Must_be_visible()'><b>TS_49_TC_14_Verify_After_Entering_Event_Date_1900YEAR_In_Event_Date_FieldBox_in_Birth_Adoption_Event_GetStarted_Page_Then_Alert_Error_Message_Must_be_visible</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	After_Click_On_GetStarted_Alert_Error_Message_Should_Throw_If_Date_is_Incorrect must be visible expected [1] but found [0]
+	at HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_14_Verify_After_Entering_Event_Date_1900YEAR_In_Event_Date_FieldBox_in_Birth_Adoption_Event_GetStarted_Page_Then_Alert_Error_Message_Must_be_visible(Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.java:510)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace610582692", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace610582692'><pre>java.lang.AssertionError: The following asserts failed:
+	After_Click_On_GetStarted_Alert_Error_Message_Should_Throw_If_Date_is_Incorrect must be visible expected [1] but found [0]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_14_Verify_After_Entering_Event_Date_1900YEAR_In_Event_Date_FieldBox_in_Birth_Adoption_Event_GetStarted_Page_Then_Alert_Error_Message_Must_be_visible(Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.java:510)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>6</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_51_TC_27_Verify_Click_on_MyInfo_Tab()'><b>TS_51_TC_27_Verify_Click_on_MyInfo_Tab</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()=&apos;Personal Information&apos;] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: edge-headless-shell, browserVersion: 124.0.2478.67, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57302}, msedge: {msedgedriverVersion: 124.0.2478.67 (d385ef2844e0..., userDataDir: C:\Users\NANDAN~1.GUP\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57302/devtoo..., se:cdpVersion: 124.0.2478.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf4f14e9e952dede5a4752555ee9b186
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at HB_Active_PPT_PageObjects.LifeEvent_MyDetails_MyInformation_PageObject.wait_until_Personal_Info_Header_LifeEvent_Page(LifeEvent_MyDetails_MyInformation_PageObject.java:497)
+	at HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_51_TC_27_Verify_Click_on_MyInfo_Tab(Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.java:1752)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1260160798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1260160798'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[text()=&apos;Personal Information&apos;] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: edge-headless-shell, browserVersion: 124.0.2478.67, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57302}, msedge: {msedgedriverVersion: 124.0.2478.67 (d385ef2844e0..., userDataDir: C:\Users\NANDAN~1.GUP\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57302/devtoo..., se:cdpVersion: 124.0.2478.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf4f14e9e952dede5a4752555ee9b186
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at HB_Active_PPT_PageObjects.LifeEvent_MyDetails_MyInformation_PageObject.wait_until_Personal_Info_Header_LifeEvent_Page(LifeEvent_MyDetails_MyInformation_PageObject.java:497)
+	at HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_51_TC_27_Verify_Click_on_MyInfo_Tab(Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.java:1752)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>60</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_01_to_verify_Click_ON_LifeEvent_DropdownOption_In_MyAccountTab()'><b>TS_49_TC_01_to_verify_Click_ON_LifeEvent_DropdownOption_In_MyAccountTab</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios<br>Parameters: mbctra0049@lifeworks.com, Welcome1!</td>
+<td></td>
+<td>45</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_02_Verify_LifeEvents_Dashboard_page()'><b>TS_49_TC_02_Verify_LifeEvents_Dashboard_page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_100__Now_user_Go_back_to_Health_care_Medical_page_Select_High_Deductible_Plans_again_Then_contribution_PoPUP_Should_come()'><b>TS_49_TC_100__Now_user_Go_back_to_Health_care_Medical_page_Select_High_Deductible_Plans_again_Then_contribution_PoPUP_Should_come</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>4</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_101_to_verify_High_dedudctible_plan_pay_Period_your_contribution_Page()'><b>TS_49_TC_101_to_verify_High_dedudctible_plan_pay_Period_your_contribution_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_102_to_Make_HSA_Contributions_Select_button_enabled()'><b>TS_49_TC_102_to_Make_HSA_Contributions_Select_button_enabled</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_103_Click_on_Select_button_After_Making_Contributions()'><b>TS_49_TC_103_Click_on_Select_button_After_Making_Contributions</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_104_to_Verify_in_Spending_Account_Page_Contribution_Amount_saved_or_not()'><b>TS_49_TC_104_to_Verify_in_Spending_Account_Page_Contribution_Amount_saved_or_not</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_106__to_Verify_in_Spending_Account_Page_Contribution_Amount_saved_or_not_After_DSD_flow()'><b>TS_49_TC_106__to_Verify_in_Spending_Account_Page_Contribution_Amount_saved_or_not_After_DSD_flow</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_107_to_verify_user_able_to_Land_on_LifeEvents_insurance_Coverage_Page()'><b>TS_49_TC_107_to_verify_user_able_to_Land_on_LifeEvents_insurance_Coverage_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>8</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_108_to_verify_all_the_elements_Present_in_Disablity_Page()'><b>TS_49_TC_108_to_verify_all_the_elements_Present_in_Disablity_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_109_to_verify_all_the_Links_Present_on_Page_are_broken_or_not_Disability_Page()'><b>TS_49_TC_109_to_verify_all_the_Links_Present_on_Page_are_broken_or_not_Disability_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_110_to_verify_all_the_elements_Present_in_Life_Page()'><b>TS_49_TC_110_to_verify_all_the_elements_Present_in_Life_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_111__to_verify_all_the_Links_Present_on_Page_are_broken_or_not_life_Page()'><b>TS_49_TC_111__to_verify_all_the_Links_Present_on_Page_are_broken_or_not_life_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_112__to_verify_user_able_to_Land_on_LifeEvents_Complete_Enrollment_Page()'><b>TS_49_TC_112__to_verify_user_able_to_Land_on_LifeEvents_Complete_Enrollment_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>11</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_113_to_verify_user_able_to_click_Print_Button_Life_Events_Complete_Enrollment_Page()'><b>TS_49_TC_113_to_verify_user_able_to_click_Print_Button_Life_Events_Complete_Enrollment_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_114_to_verify_Dependent_table_name_Self_Complete_Enrollment_Page()'><b>TS_49_TC_114_to_verify_Dependent_table_name_Self_Complete_Enrollment_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_115__to_verify_Dependent_table_Self_DOB_Complete_Enrollment_Page()'><b>TS_49_TC_115__to_verify_Dependent_table_Self_DOB_Complete_Enrollment_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_116_to_verify_Availabel_to_be_updates_tile_Edit_button_are_redirect_or_not()'><b>TS_49_TC_116_to_verify_Availabel_to_be_updates_tile_Edit_button_are_redirect_or_not</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_117_to_verify_Waived_Benefits_tile_Edit_button_are_redirect_or_not()'><b>TS_49_TC_117_to_verify_Waived_Benefits_tile_Edit_button_are_redirect_or_not</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_118_to_verify_footer_Complete_Enrollment_Button_disable_or_not_when_Check_box_unchecked()'><b>TS_49_TC_118_to_verify_footer_Complete_Enrollment_Button_disable_or_not_when_Check_box_unchecked</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>3</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_119__to_verify_user_able_to_Select_Check_Box()'><b>TS_49_TC_119__to_verify_user_able_to_Select_Check_Box</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>3</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_120__to_verify_footer_Complete_Enrollment_Button_Enabled_or_not_when_Check_box_is_checked()'><b>TS_49_TC_120__to_verify_footer_Complete_Enrollment_Button_Enabled_or_not_when_Check_box_is_checked</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_121__to_verify_footer_Cancel_Life_Event_button_Present_or_not()'><b>TS_49_TC_121__to_verify_footer_Cancel_Life_Event_button_Present_or_not</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_122__to_verify_footer_Back_Button_Present_or_not()'><b>TS_49_TC_122__to_verify_footer_Back_Button_Present_or_not</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_12_Verify_click_on_getStarted_in_LifeEvent_page()'><b>TS_49_TC_12_Verify_click_on_getStarted_in_LifeEvent_page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_13_Verify_Entering_Event_Date_In_Event_Date_FieldBox_in_Birth_Adoption_Event_GetStarted_Page()'><b>TS_49_TC_13_Verify_Entering_Event_Date_In_Event_Date_FieldBox_in_Birth_Adoption_Event_GetStarted_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_15_Verify_Other_Things_To_Consider_Bullet_Points_Must_be_visible()'><b>TS_49_TC_15_Verify_Other_Things_To_Consider_Bullet_Points_Must_be_visible</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_16_Verify_Forms_And_Docume_Card_Tile()'><b>TS_49_TC_16_Verify_Forms_And_Docume_Card_Tile</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>3</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_17_Verify_Aditional_Card_Tile()'><b>TS_49_TC_17_Verify_Aditional_Card_Tile</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_18_Verify_Entering_Event_Correct_Date_In_Event_Date_FieldBox_in_Birth_Adoption_Event_GetStarted_Page()'><b>TS_49_TC_18_Verify_Entering_Event_Correct_Date_In_Event_Date_FieldBox_in_Birth_Adoption_Event_GetStarted_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>64</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_19_Verify_click_On_GetStarted_btn_And_Then_Fill_EventDate_calander_as_canceled_the_LifeEvent()'><b>TS_49_TC_19_Verify_click_On_GetStarted_btn_And_Then_Fill_EventDate_calander_as_canceled_the_LifeEvent</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>56</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_19_Verify_click_On_Next_Btn_to_Go_To_FamilyDetails_Page()'><b>TS_49_TC_19_Verify_click_On_Next_Btn_to_Go_To_FamilyDetails_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_20_Check_Header_In_FamilyDetails_Page_And_Click_On_Add_Dependent()'><b>TS_49_TC_20_Check_Header_In_FamilyDetails_Page_And_Click_On_Add_Dependent</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_21_Click_On_CloseBtn_In_Add_DependentPage()'><b>TS_49_TC_21_Click_On_CloseBtn_In_Add_DependentPage</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_22_Click_On_AcceptBtn_In_Add_DependentPage()'><b>TS_49_TC_22_Click_On_AcceptBtn_In_Add_DependentPage</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_23_Verify_NameBoxBlank_AndLastNameBox_Blank_ShouldThrow_AlertMessage()'><b>TS_49_TC_23_Verify_NameBoxBlank_AndLastNameBox_Blank_ShouldThrow_AlertMessage</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_24_To_validate_SSN_Wrong_Number_locator()'><b>TS_49_TC_24_To_validate_SSN_Wrong_Number_locator</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_25_To_validate_SSN_WrongSerialNumber_locator()'><b>TS_49_TC_25_To_validate_SSN_WrongSerialNumber_locator</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_26_To_validate_SSN_CorrectNumber_locator()'><b>TS_49_TC_26_To_validate_SSN_CorrectNumber_locator</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_27_To_validate_Date_Of_Birth_Wrong_locator()'><b>TS_49_TC_27_To_validate_Date_Of_Birth_Wrong_locator</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_28_To_validate_Date_Of_Birth_120yearabove_Negative_case_locator()'><b>TS_49_TC_28_To_validate_Date_Of_Birth_120yearabove_Negative_case_locator</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_29_To_validate_Correct_Date_Of_Birth()'><b>TS_49_TC_29_To_validate_Correct_Date_Of_Birth</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_30_Verify_RetirementDropdownBoxBlank_AndGenderDropdownBoxBlank_And_CountryDropdownBoxBlank_ShouldThrow_AlertMessage()'><b>TS_49_TC_30_Verify_RetirementDropdownBoxBlank_AndGenderDropdownBoxBlank_And_CountryDropdownBoxBlank_ShouldThrow_AlertMessage</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_31_Verify_LiveAt_SameAddress_FieldBox_Should_HaveAutometicallypopulatedProfileSectionData()'><b>TS_49_TC_31_Verify_LiveAt_SameAddress_FieldBox_Should_HaveAutometicallypopulatedProfileSectionData</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_32_Verify_selectCountry_Canada_then_AccordinglyTheir_province_ShouldvisibleAndWorking_Also_Currosponding_ValidZipCodeShouldbeTestedInZipCodeField()'><b>TS_49_TC_32_Verify_selectCountry_Canada_then_AccordinglyTheir_province_ShouldvisibleAndWorking_Also_Currosponding_ValidZipCodeShouldbeTestedInZipCodeField</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>4</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_33_Verify_selectCountry_UnitedState_then_AccordinglyTheir_State_ShouldvisibleAndWorking_Also_Currosponding_ValidZipCodeShouldbeTestedInZipCodeField()'><b>TS_49_TC_33_Verify_selectCountry_UnitedState_then_AccordinglyTheir_State_ShouldvisibleAndWorking_Also_Currosponding_ValidZipCodeShouldbeTestedInZipCodeField</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>4</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_34_Verify_City_Afddress1_Blank_ShouldThrow_AlertMessage()'><b>TS_49_TC_34_Verify_City_Afddress1_Blank_ShouldThrow_AlertMessage</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_35_Verify_Fill_Correct_AddIndividuals_data_AndVerify_If_ableToAdd_Bneficiery_ORNOT()'><b>TS_49_TC_35_Verify_Fill_Correct_AddIndividuals_data_AndVerify_If_ableToAdd_Bneficiery_ORNOT</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>5</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_37_Verify_DateOfBirth_AND_MaritalStatus_must_match_with_MyAccountPersonalInfoSection()'><b>TS_49_TC_37_Verify_DateOfBirth_AND_MaritalStatus_must_match_with_MyAccountPersonalInfoSection</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_39_Verify_Contact_Email_AND_Personal_Email_Must_Match_With_MyAccount_PersoanlInfo()'><b>TS_49_TC_39_Verify_Contact_Email_AND_Personal_Email_Must_Match_With_MyAccount_PersoanlInfo</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_40_Verify_Contact_Email1__wrong_Email_Entered_Alert_Message()'><b>TS_49_TC_40_Verify_Contact_Email1__wrong_Email_Entered_Alert_Message</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_41_Verify_Contact_Email_2_wrong_Email_Entered_Alert_Message()'><b>TS_49_TC_41_Verify_Contact_Email_2_wrong_Email_Entered_Alert_Message</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_42_Verify_Personal_Email_wrong_Email_Entered_Alert_Message()'><b>TS_49_TC_42_Verify_Personal_Email_wrong_Email_Entered_Alert_Message</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_43_Verify_Enter_Wrong_Work_phone_FieldBox()'><b>TS_49_TC_43_Verify_Enter_Wrong_Work_phone_FieldBox</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_44_Verify_Enter_Wrong_mobile_phone_FieldBox()'><b>TS_49_TC_44_Verify_Enter_Wrong_mobile_phone_FieldBox</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>4</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_45_Verify_Enter_Wrong_Home_phone_FieldBox()'><b>TS_49_TC_45_Verify_Enter_Wrong_Home_phone_FieldBox</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_52_to_verify_user_able_to_Land_on_Life_Events_Summary_Page()'><b>TS_49_TC_52_to_verify_user_able_to_Land_on_Life_Events_Summary_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>13</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_53_to_verify_user_able_to_click_Print_Button_Life_Events_Summary_Page_tab1()'><b>TS_49_TC_53_to_verify_user_able_to_click_Print_Button_Life_Events_Summary_Page_tab1</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>9</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_54_to_verify_Size_And_text_of_Sub_tab_Summary_Page_()'><b>TS_49_TC_54_to_verify_Size_And_text_of_Sub_tab_Summary_Page_</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>9</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_55_to_verify_user_able_to_switch_tabs_from_one_tab_another()'><b>TS_49_TC_55_to_verify_user_able_to_switch_tabs_from_one_tab_another</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_56_to_verify_Dependent_table_name_Self()'><b>TS_49_TC_56_to_verify_Dependent_table_name_Self</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_57__to_verify_Dependent_table_Self_DOB()'><b>TS_49_TC_57__to_verify_Dependent_table_Self_DOB</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_58_to_verify_if_user_Select_Medical_Plan_then_tick_Mark_Should_be_there_else_not()'><b>TS_49_TC_58_to_verify_if_user_Select_Medical_Plan_then_tick_Mark_Should_be_there_else_not</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>5</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_59_to_verify_if_user_Select_Dental_Plan_then_tick_Mark_Should_be_there_else_not()'><b>TS_49_TC_59_to_verify_if_user_Select_Dental_Plan_then_tick_Mark_Should_be_there_else_not</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_60_to_verify_if_user_Select_Vision_Plan_then_tick_Mark_Should_be_there_else_not()'><b>TS_49_TC_60_to_verify_if_user_Select_Vision_Plan_then_tick_Mark_Should_be_there_else_not</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_61_to_verify_user_able_to_redirect_to_correctPage_After_Clicking_Edit_Button_in_Available_to_be_updated_Sections_Palte()'><b>TS_49_TC_61_to_verify_user_able_to_redirect_to_correctPage_After_Clicking_Edit_Button_in_Available_to_be_updated_Sections_Palte</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_62_to_verify_user_able_to_redirect_to_correctPage_After_Clicking_Edit_Button_in_Waved_Benefits_Plate()'><b>TS_49_TC_62_to_verify_user_able_to_redirect_to_correctPage_After_Clicking_Edit_Button_in_Waved_Benefits_Plate</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_63_to_verify_footer_dark_table_details()'><b>TS_49_TC_63_to_verify_footer_dark_table_details</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_64_to_verify_data_Present_in_Plates_or_not_in_Available_to_be_updated_Sections_Palte()'><b>TS_49_TC_64_to_verify_data_Present_in_Plates_or_not_in_Available_to_be_updated_Sections_Palte</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_65_to_verify_data_Present_in_Plates_or_not_in_Waved_Benefits_Plate_Sections()'><b>TS_49_TC_65_to_verify_data_Present_in_Plates_or_not_in_Waved_Benefits_Plate_Sections</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_66_to_verify_user_able_to_click_Print_Button_Life_Events_Summary_Page_tab2_2023_coverage()'><b>TS_49_TC_66_to_verify_user_able_to_click_Print_Button_Life_Events_Summary_Page_tab2_2023_coverage</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_67_to_verify_Dependent_table_name_Self_matched_or_not_2023()'><b>TS_49_TC_67_to_verify_Dependent_table_name_Self_matched_or_not_2023</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_68_to_verify_Dependent_table_Self_DOB_matched_or_not_2023()'><b>TS_49_TC_68_to_verify_Dependent_table_Self_DOB_matched_or_not_2023</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_69_to_verify_if_user_Select_Medical_Plan_then_tick_Mark_Should_be_there_else_not_tab_2023()'><b>TS_49_TC_69_to_verify_if_user_Select_Medical_Plan_then_tick_Mark_Should_be_there_else_not_tab_2023</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_70_to_verify_if_user_Select_Dental_Plan_then_tick_Mark_Should_be_there_else_not_tab_2023()'><b>TS_49_TC_70_to_verify_if_user_Select_Dental_Plan_then_tick_Mark_Should_be_there_else_not_tab_2023</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_71_to_verify_if_user_Select_Medical_Plan_then_tick_Mark_Should_be_there_else_not_tab_2023()'><b>TS_49_TC_71_to_verify_if_user_Select_Medical_Plan_then_tick_Mark_Should_be_there_else_not_tab_2023</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_72_to_verify_user_able_to_redirect_to_correctPage_After_Clicking_Edit_Button_of_tab_2_Plates_2023_coverage()'><b>TS_49_TC_72_to_verify_user_able_to_redirect_to_correctPage_After_Clicking_Edit_Button_of_tab_2_Plates_2023_coverage</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_73_to_verify_footer_dark_table_details_tab_2_Plates_2023_coverage()'><b>TS_49_TC_73_to_verify_footer_dark_table_details_tab_2_Plates_2023_coverage</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_74_to_verify_user_able_to_Land_on_LifeEvents_Health_Page()'><b>TS_49_TC_74_to_verify_user_able_to_Land_on_LifeEvents_Health_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>9</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_75_to_verify_user_able_to_Edit_Medical_Plan_if_its_Editable_For_Employee_only()'><b>TS_49_TC_75_to_verify_user_able_to_Edit_Medical_Plan_if_its_Editable_For_Employee_only</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_76_to_verify_user_able_to_Edit_Dental_Plan_if_its_Editable()'><b>TS_49_TC_76_to_verify_user_able_to_Edit_Dental_Plan_if_its_Editable</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_77_to_verify_user_able_to_Edit_Vison_Plan_if_its_Editable()'><b>TS_49_TC_77_to_verify_user_able_to_Edit_Vison_Plan_if_its_Editable</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_80_to_verify_When_user_select_High_Deductible_Plan_Then_HSA_POPUP_Should_come()'><b>TS_49_TC_80_to_verify_When_user_select_High_Deductible_Plan_Then_HSA_POPUP_Should_come</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_81_to_verify_Wnen_user_Click_Next_Button_of_HSA_POPUP_then_QA_Should_comes()'><b>TS_49_TC_81_to_verify_Wnen_user_Click_Next_Button_of_HSA_POPUP_then_QA_Should_comes</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>10</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_82_to_verify_user_abale_to_make_PPT_Eligible_for_HSA_by_Selecting_All_Ans_NO()'><b>TS_49_TC_82_to_verify_user_abale_to_make_PPT_Eligible_for_HSA_by_Selecting_All_Ans_NO</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_83_to_verify_user_able_to_see_healthSavingAccountTrustAgreement_when_clicking_Next_Button_After_Making_PPT_Eligible()'><b>TS_49_TC_83_to_verify_user_able_to_see_healthSavingAccountTrustAgreement_when_clicking_Next_Button_After_Making_PPT_Eligible</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_84_to_verify_user_able_to_see_healthSavingAccountBankAgreement_when_clicking_Next_Button_After_Making_PPT_Eligible()'><b>TS_49_TC_84_to_verify_user_able_to_see_healthSavingAccountBankAgreement_when_clicking_Next_Button_After_Making_PPT_Eligible</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_85_to_verify_High_dedudctible_plan_pay_Period_your_contribution_Page()'><b>TS_49_TC_85_to_verify_High_dedudctible_plan_pay_Period_your_contribution_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_86__to_Make_HSA_Contributions_Select_button_enabled()'><b>TS_49_TC_86__to_Make_HSA_Contributions_Select_button_enabled</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>1</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_87_Click_on_Select_button_After_Making_Contributions()'><b>TS_49_TC_87_Click_on_Select_button_After_Making_Contributions</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_88_to_verify_user_able_to_Land_on_LifeEvents_SpendingAccount_Page()'><b>TS_49_TC_88_to_verify_user_able_to_Land_on_LifeEvents_SpendingAccount_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>14</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_89_to_verify_3_Eligible_Options_availabe_on_header_text_Spending_Account()'><b>TS_49_TC_89_to_verify_3_Eligible_Options_availabe_on_header_text_Spending_Account</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_90_to_verify_HSA_Enable_and_Edit_Contribution()'><b>TS_49_TC_90_to_verify_HSA_Enable_and_Edit_Contribution</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_91_to_verify_LPHCSA_Enable_and_Edit_Contribution()'><b>TS_49_TC_91_to_verify_LPHCSA_Enable_and_Edit_Contribution</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_92__to_verify_DCSA_Enable_and_Edit_Contribution()'><b>TS_49_TC_92__to_verify_DCSA_Enable_and_Edit_Contribution</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_93__to_verify_HCSA_Should_be_Disable()'><b>TS_49_TC_93__to_verify_HCSA_Should_be_Disable</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_93__to_verify_HSA_Disable()'><b>TS_49_TC_93__to_verify_HSA_Disable</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_94_to_verify_user_go_back_Health_care_Medical_Page_and_Select_Non_High_Deductible_Plan()'><b>TS_49_TC_94_to_verify_user_go_back_Health_care_Medical_Page_and_Select_Non_High_Deductible_Plan</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>4</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_95__to_verify_user_Abel_to_Select_Depedents_By_clicking_Apply_Button_()'><b>TS_49_TC_95__to_verify_user_Abel_to_Select_Depedents_By_clicking_Apply_Button_</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_96__to_verify_2_Eligible_Options_availabe_on_header_text_Spending_Account()'><b>TS_49_TC_96__to_verify_2_Eligible_Options_availabe_on_header_text_Spending_Account</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>2</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_97__to_verify_LPHCSA_Disble()'><b>TS_49_TC_97__to_verify_LPHCSA_Disble</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_98__to_verify_DCSA_Enable()'><b>TS_49_TC_98__to_verify_DCSA_Enable</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_99__to_verify_HCSASA_Should_be_Enable()'><b>TS_49_TC_99__to_verify_HCSASA_Should_be_Enable</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_51_TC_25_Verify__filled_Details_must_be_Populated_in_Added_Dependent_Tile()'><b>TS_51_TC_25_Verify__filled_Details_must_be_Populated_in_Added_Dependent_Tile</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>5</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_51_TC_26_Verify_View_Details_Btn_And_ALL_filled_Details_must_be_Populated_in_View_Detail_Page()'><b>TS_51_TC_26_Verify_View_Details_Btn_And_ALL_filled_Details_must_be_Populated_in_View_Detail_Page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>6</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_51_TC_28_Verify_Participant_name_Must_be_Correct_And_Address_In_MyInfo_Tab_must_be_matched_with_MyAccount_personalInfo_page_Details()'><b>TS_51_TC_28_Verify_Participant_name_Must_be_Correct_And_Address_In_MyInfo_Tab_must_be_matched_with_MyAccount_personalInfo_page_Details</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_51_TC_30_Click_On_Edit_Btn_in_MyInfo_page()'><b>TS_51_TC_30_Click_On_Edit_Btn_in_MyInfo_page</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>0</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_51_TC_38_Verify_Select_CheckBox_Question_YesNo()'><b>TS_51_TC_38_Verify_Select_CheckBox_Question_YesNo</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>3</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_51_TC_39_Verify_Click_On_UpdateBtn()'><b>TS_51_TC_39_Verify_Click_On_UpdateBtn</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td></td>
+<td>22</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_105_to_Verify_DSD_Flow_Eligible_PPT()'><b>TS_49_TC_105_to_Verify_DSD_Flow_Eligible_PPT</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;dst-hsa-recomendation-amount&apos;]&quot;}
+  (Session info: edge-headless-shell=124.0.2478.67)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [bf4f14e9e952dede5a4752555ee9b186, findElement {value=//*[@id=&apos;dst-hsa-recomendation-amount&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: edge-headless-shell, browserVersion: 124.0.2478.67, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57302}, msedge: {msedgedriverVersion: 124.0.2478.67 (d385ef2844e0..., userDataDir: C:\Users\NANDAN~1.GUP\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57302/devtoo..., se:cdpVersion: 124.0.2478.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf4f14e9e952dede5a4752555ee9b186
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at HB_Active_PPT_PageObjects.LifeEvent_HealthCare_Medical_PageObject.HSA_contribution_input_box_0_1950(LifeEvent_HealthCare_Medical_PageObject.java:348)
+	at HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_105_to_Verify_DSD_Flow_Eligible_PPT(Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.java:3834)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1593019005", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1593019005'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;dst-hsa-recomendation-amount&apos;]&quot;}
+  (Session info: edge-headless-shell=124.0.2478.67)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [bf4f14e9e952dede5a4752555ee9b186, findElement {value=//*[@id=&apos;dst-hsa-recomendation-amount&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: edge-headless-shell, browserVersion: 124.0.2478.67, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57302}, msedge: {msedgedriverVersion: 124.0.2478.67 (d385ef2844e0..., userDataDir: C:\Users\NANDAN~1.GUP\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57302/devtoo..., se:cdpVersion: 124.0.2478.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf4f14e9e952dede5a4752555ee9b186
+	at jdk.internal.reflect.GeneratedConstructorAccessor34.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at HB_Active_PPT_PageObjects.LifeEvent_HealthCare_Medical_PageObject.HSA_contribution_input_box_0_1950(LifeEvent_HealthCare_Medical_PageObject.java:348)
+	at HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_105_to_Verify_DSD_Flow_Eligible_PPT(Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.java:3834)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>35</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+<tr>
+<td title='HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_123_to_verify_user_able_to_Complete_Birth_Adoption_Life_Event()'><b>TS_49_TC_123_to_verify_user_able_to_Complete_Birth_Adoption_Life_Event</b><br>Test class: HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;approval-event&apos;]/span[1]&quot;}
+  (Session info: edge-headless-shell=124.0.2478.67)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [bf4f14e9e952dede5a4752555ee9b186, findElement {value=//*[@class=&apos;approval-event&apos;]/span[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: edge-headless-shell, browserVersion: 124.0.2478.67, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57302}, msedge: {msedgedriverVersion: 124.0.2478.67 (d385ef2844e0..., userDataDir: C:\Users\NANDAN~1.GUP\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57302/devtoo..., se:cdpVersion: 124.0.2478.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf4f14e9e952dede5a4752555ee9b186
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at HB_Active_PPT_PageObjects.LifeEvent_CompleteEnrollment_PageObject.Event_type_Open_Enrollment_Submitted_text(LifeEvent_CompleteEnrollment_PageObject.java:152)
+	at HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_123_to_verify_user_able_to_Complete_Birth_Adoption_Life_Event(Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.java:4226)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1951863984", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1951863984'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@class=&apos;approval-event&apos;]/span[1]&quot;}
+  (Session info: edge-headless-shell=124.0.2478.67)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [bf4f14e9e952dede5a4752555ee9b186, findElement {value=//*[@class=&apos;approval-event&apos;]/span[1], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: edge-headless-shell, browserVersion: 124.0.2478.67, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57302}, msedge: {msedgedriverVersion: 124.0.2478.67 (d385ef2844e0..., userDataDir: C:\Users\NANDAN~1.GUP\AppDa...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57302/devtoo..., se:cdpVersion: 124.0.2478.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf4f14e9e952dede5a4752555ee9b186
+	at jdk.internal.reflect.GeneratedConstructorAccessor34.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at HB_Active_PPT_PageObjects.LifeEvent_CompleteEnrollment_PageObject.Event_type_Open_Enrollment_Submitted_text(LifeEvent_CompleteEnrollment_PageObject.java:152)
+	at HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.TS_49_TC_123_to_verify_user_able_to_Complete_Birth_Adoption_Life_Event(Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios.java:4226)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>7</td>
+<td>HB_Active_PPT_TestCases.Life_Event_BirthAdoptions_PPT1_GetStarted_Scenarios@71529963</td></tr>
+</table><p>
+</body>
+</html>

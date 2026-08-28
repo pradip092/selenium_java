@@ -1,0 +1,3743 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>EAS</groupId>
+  <artifactId>E2EProject</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>E2EProject</name>
+  <url>http://maven.apache.org</url>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  
+  <dependencies>
+    
+   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+ <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+ 
+     <version>4.8.1</version>   
+ 
+	</dependency>
+	
+
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+ 
+    <version>5.6.4</version> 
+</dependency>
+
+	
+	
+	
+	<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.6</version>
+</dependency>
+<dependency>
+			<groupId>org.apache.pdfbox</groupId>
+			<artifactId>pdfbox-tools</artifactId>
+			<version>2.0.11</version>
+		</dependency>
+		
+		
+		  <!-- TestNG 7.5.1 supports Java 8 and fixes parallel retry bugs -->
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.5.1</version>
+        <scope>compile</scope>
+    </dependency>
+    
+    <!-- ExtentReports 5.0.9 is last version supporting Java 8 -->
+    <dependency>
+        <groupId>com.aventstack</groupId>
+        <artifactId>extentreports</artifactId>
+        <version>5.0.9</version>
+    </dependency>
+
+	<dependency>
+    <groupId>ru.yandex.qatools.ashot</groupId>
+    <artifactId>ashot</artifactId>
+    <version>1.5.2</version>
+</dependency>
+
+
+<dependency>
+    <groupId>javax.mail</groupId>
+    <artifactId>mail</artifactId>
+    <version>1.4.7</version>
+</dependency>
+	
+	
+	 <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-api</artifactId>
+    <version>2.18.0</version>
+  </dependency>
+  
+     <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+     
+   <!--  <dependency>
+   <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-surefire-plugin</artifactId>
+  <version>3.0.0</version>
+  <type>maven-plugin</type>
+</dependency>  --> 
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>4.1.0</version>
+</dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>4.1.0</version>
+</dependency>
+  
+         <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+<dependency>
+    <groupId>com.github.javafaker</groupId>
+    <artifactId>javafaker</artifactId>
+    <version>1.0.2</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+<dependency>
+    <groupId>com.googlecode.json-simple</groupId>
+    <artifactId>json-simple</artifactId>
+    <version>1.1.1</version>
+</dependency>
+  
+  <dependency>
+    <groupId>org.apache.logging.log4j</groupId>
+    <artifactId>log4j-core</artifactId>
+    <version>2.18.0</version>
+  </dependency>
+	
+	
+	<!-- https://mvnrepository.com/artifact/com.assertthat/selenium-shutterbug -->
+<dependency>
+    <groupId>com.assertthat</groupId>
+    <artifactId>selenium-shutterbug</artifactId>
+    <version>1.6</version>
+</dependency>
+
+	 <dependency>
+    <groupId>com.browserstack</groupId>
+    <artifactId>browserstack-local-java</artifactId>
+    <version>1.0.6</version>
+</dependency>
+
+
+
+	
+  </dependencies>
+ 
+  
+ <profiles>
+	 
+	 <!-- ######  Failed     -->    
+
+	 <profile>
+   <id>MPC_Maintenance_Chrome</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+      <suiteXmlFile>MPC_Maintenance_Chrome.xml</suiteXmlFile>
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+             <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile> 
+	 
+	 <!-- ######   HB_Retiree_AME_CFG_Chrome       -->    
+	<profile>
+   <id>HB_Retiree_AME_CFG_Chrome</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>HB_Retiree_AME_CFG_Chrome.xml</suiteXmlFile>
+  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile> 
+     
+     <profile>
+   <id>HB_Retiree_AME_CFG_Edge</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+      <suiteXmlFile>HB_Retiree_AME_CFG_Edge.xml</suiteXmlFile>
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile> 
+   <!-- ######   HB_Retiree_AME_CFG_FireFox       -->    
+	<profile>
+   <id>HB_Retiree_AME_CFG_FireFox</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+      <suiteXmlFile>HB_Retiree_AME_CFG_FireFox.xml</suiteXmlFile>
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>    
+     
+      <!-- ######   HB_Retiree_AME_CFG_Safari      -->    
+	<profile>
+   <id>HB_Retiree_AME_CFG_Safari</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+      <suiteXmlFile>HB_Retiree_AME_CFG_Safari.xml</suiteXmlFile>
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>    
+     
+    <!--  #################################    DB Profiles ############################################-->
+	 <!--   CFG REGION --> 
+	 <!-- ######     DB_HB_CFG_Regression_Run_Chrome        -->      
+          
+       <profile>
+   <id>DB_HB_CFG_Regression_Run_Chrome</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+		<!--  <suiteXmlFile>ROL_Process_Test_CFG_Chrome.xml</suiteXmlFile> -->
+			  <suiteXmlFile>DB_HB_CFG_Chrome.xml</suiteXmlFile> 
+		  </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+        <profile>
+   <id>Demo_DB_HB_CFG_Regression_Run_Chrome</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+		<!--	  <suiteXmlFile>ROL_Process_Test_CFG_Chrome.xml</suiteXmlFile> -->
+			  <suiteXmlFile>Demo_DB_HB_CFG_Chrome.xml</suiteXmlFile> 
+		  </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+	 
+	 <profile>
+   <id>ROL_Flow_CFG_Chrome</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+      <suiteXmlFile>ROL_Process_Test_CFG_Chrome.xml</suiteXmlFile>
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile> 
+     
+	 
+	 
+	 
+	 
+	  <!-- ######     DB_HB_PROD_Regression_Run_Chrome        -->      
+          
+       <profile>
+   <id>DB_HB_PROD_Regression_Run_Chrome</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+		<suiteXmlFile>DB_HB_PROD_Chrome.xml</suiteXmlFile> 
+		  </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+     
+	 
+	  <!-- ######     DB_HB_PROD_Regression_Run_Edge        -->      
+          
+       <profile>
+   <id>DB_HB_PROD_Regression_Run_Edge</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+		<suiteXmlFile>DB_HB_PROD_Edge.xml</suiteXmlFile> 
+		  </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+      
+	 
+	 
+	 
+	  <!-- ######     DB_HB_CFG_Regression_Run_Edge        -->      
+          
+       <profile>
+   <id>DB_HB_CFG_Regression_Run_Edge</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+		<suiteXmlFile>DB_HB_CFG_Edge.xml</suiteXmlFile> 
+		  </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+     
+	
+	  
+	 
+	 <!-- ######      DB Active ### Chrome  CFG      --> 
+  
+   
+     <profile>
+   <id>ROL_Process_Test_CFG_Chrome</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+       <!--     <suiteXmlFile>pradeep.xml</suiteXmlFile>  -->
+           <suiteXmlFile>ROL_Process_Test_CFG_Chrome.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+   
+   
+   <profile>
+   <id>DB_Active_FULL_RUN_CFG_ChromeBrowser</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>DB_PPT_CommonTestcases_CFG_Chrome.xml</suiteXmlFile>
+           <suiteXmlFile>DB_Active_PPT_CFG_Chrome.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+    <!-- ######      DB Active ### Edge CFG        -->   
+	 <profile>
+   <id>DB_Active_FULL_RUN_CFG_Edge</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+           <suiteXmlFile>DB_PPT_CommonTestcases_CFG_Edge.xml</suiteXmlFile>
+           <suiteXmlFile>DB_Active_PPT_CFG_Edge.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+	 
+	<!-- ######      DB Active ### firefox CFG        -->    
+	<profile>
+   <id>DB_Active_FULL_RUN_CFG_FireFox</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+           <suiteXmlFile>DB_PPT_CommonTestcases_CFG_FireFox.xml</suiteXmlFile>
+           <suiteXmlFile>DB_Active_PPT_CFG_FireFox.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile> 
+	 
+	 
+	<!-- ######      DB Active ### Safari CFG        -->    
+	<profile>
+   <id>DB_Active_FULL_RUN_CFG_Safari</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+      <suiteXmlFile>DB_PPT_CommonTestcases_CFG_Safari.xml</suiteXmlFile>
+           <suiteXmlFile>DB_Active_PPT_CFG_Safari.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile> 
+     
+   <!--   ########################    DB In Pay  ###############        --> 
+ <!--    DB In Pay CFG REGION  chrome --> 
+   <profile>
+  <id>DB_Inpay_PPT_CFG_Chrome</id> 
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+     <!--      <suiteXmlFile>DB_PPT_CommonTestcases_CFG_Chrome.xml</suiteXmlFile> -->
+            <suiteXmlFile>DB_Inpay_PPT_CFG_Chrome.xml</suiteXmlFile>
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+  
+  <!--    DB In Pay CFG REGION  edge --> 
+  
+   <profile>
+  <id>DB_Inpay_PPT_CFG_Edge</id> 
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+       <suiteXmlFile>DB_PPT_CommonTestcases_CFG_Edge.xml</suiteXmlFile> 
+            <suiteXmlFile>DB_Inpay_PPT_CFG_Edge.xml</suiteXmlFile>
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+  
+  <!--    DB In Pay CFG REGION  FireFox --> 
+  
+   <profile>
+  <id>DB_Inpay_PPT_CFG_FireFox</id> 
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>DB_PPT_CommonTestcases_CFG_FireFox.xml</suiteXmlFile>
+            <suiteXmlFile>DB_Inpay_PPT_CFG_firefox.xml</suiteXmlFile>
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+   </profile>
+  <!--    DB In Pay CFG REGION  Safari --> 
+  
+   <profile>
+  <id>DB_Inpay_PPT_CFG_Safari</id> 
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+           <suiteXmlFile>DB_PPT_CommonTestcases_CFG_Safari.xml</suiteXmlFile>
+            <suiteXmlFile>DB_Inpay_PPT_CFG_Safari.xml</suiteXmlFile>
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+   </profile>
+    
+    
+    <!--    #################  DB_MultiplanEstimator_PPT_Test    ##################    -->
+    <!--  DB_MultiplanEstimator CFG REGION  chrome --> 
+    <profile>
+  <id>DB_MultiplanEstimator_RUN_CFG_Chrome</id>
+  
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+         <suiteXmlFiles>
+            <suiteXmlFile>DB_MultiplanEstimator_PPT_CFG_Chrome.xml</suiteXmlFile>
+             </suiteXmlFiles>
+          
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+        
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+    <!--  DB_MultiplanEstimator CFG REGION  Edge --> 
+    
+     <profile>
+  <id>DB_MultiplanEstimator_RUN_CFG_Edge</id>
+  
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+         <suiteXmlFiles>
+            <suiteXmlFile>DB_MultiplanEstimator_PPT_CFG_Edge.xml</suiteXmlFile>
+             </suiteXmlFiles>
+          
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+        
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+     <!--  DB_MultiplanEstimator CFG REGION  Fire Fox --> 
+     
+    <profile>
+  <id>DB_MultiplanEstimator_RUN_CFG_FireFox</id>
+  
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+         <suiteXmlFiles>
+            <suiteXmlFile>DB_MultiplanEstimator_PPT_CFG_FireFox.xml</suiteXmlFile>
+             </suiteXmlFiles>
+          
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+        
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+
+      <!--  DB_MultiplanEstimator CFG REGION  Safari -->   
+        
+    <profile>
+  <id>DB_MultiplanEstimator_RUN_CFG_Safari</id>
+  
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+         <suiteXmlFiles>
+            <suiteXmlFile>DB_MultiplanEstimator_PPT_CFG_Safari.xml</suiteXmlFile>
+             </suiteXmlFiles>
+          
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+        
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+  
+  
+  <!--     ################     Deffered_PPT_Test CFG #################        -->
+    <!--  DB_Deffered_CFG REGION Chrome --> 
+    <profile>
+  <id>DB_Deferred_Full_RUN_CFG_Chrome</id>
+  
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+         <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+         <suiteXmlFiles>
+          <suiteXmlFile>DB_PPT_CommonTestcases_CFG_Chrome.xml</suiteXmlFile>
+            <suiteXmlFile>DB_Deffered_PPT_CFG_Chrome.xml</suiteXmlFile>
+          </suiteXmlFiles>
+          
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+        
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+  
+  <!--  DB_Deffered_CFG REGION Edge --> 
+  
+   
+    <profile>
+  <id>DB_Deferred_Full_RUN_CFG_Edge</id>
+  
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+         <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+         <suiteXmlFiles>
+           <suiteXmlFile>DB_PPT_CommonTestcases_CFG_Edge.xml</suiteXmlFile> 
+            <suiteXmlFile>DB_Deffered_PPT_CFG_Edge.xml</suiteXmlFile>
+          </suiteXmlFiles>
+          
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+        
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+  
+  <!--  DB_Deffered_CFG REGION FireFox --> 
+   
+    <profile>
+  <id>DB_Deferred_Full_RUN_CFG_FireFox</id>
+  
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+         <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+         <suiteXmlFiles>
+        <suiteXmlFile>DB_PPT_CommonTestcases_CFG_FireFox.xml</suiteXmlFile> 
+            <suiteXmlFile>DB_Deffered_PPT_CFG_FireFox.xml</suiteXmlFile>
+          </suiteXmlFiles>
+          
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+        
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+  
+  <!--  DB_Deffered_CFG REGION Safari --> 
+  
+   <profile>
+  <id>DB_Deferred_Full_RUN_CFG_Safari</id>
+  
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+         <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+         <suiteXmlFiles>
+            <suiteXmlFile>DB_PPT_CommonTestcases_CFG_Safari.xml</suiteXmlFile>
+            <suiteXmlFile>DB_Deffered_PPT_CFG_Safari.xml</suiteXmlFile>
+          </suiteXmlFiles>
+          
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+        
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+  
+    <!--     #########################  Go_GreenTest    ###############s    -->
+  
+ <!-- DB_Go_GreenTest_CFG chrome --> 
+  <profile>
+  <id>DB_Go_GreenTest_CFG_chrome</id>
+   
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>Go_Green_CFG_Chrome.xml</suiteXmlFile>
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>   
+  
+  
+  <!-- DB_Go_GreenTest_CFG Edge -->
+  
+  <!-- DB_Go_GreenTest_CFG FireFox -->
+  
+  <!-- DB_Go_GreenTest_CFG Safari -->
+  
+  
+  
+  <!--  ############## ROL_Process_PPT_Test     ##################################      -->
+  <!-- DB_ROL_Process_PPT_CFG Chrome -->
+    <profile>
+  <id>DB_ROL_Process_PPT_Test_CFG</id>
+  
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+         <suiteXmlFiles>
+            <suiteXmlFile>ROL_Process_Test_CFG.xml</suiteXmlFile>
+             </suiteXmlFiles>
+          
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+        
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+  
+   <!-- DB_ROL_Process_PPT_CFG Edge -->
+   
+     <!-- DB_ROL_Process_PPT_CFG FireFox -->
+     
+       <!-- DB_ROL_Process_PPT_CFG Safari -->
+       
+      
+   <!-- ######     DB_ALL_FULL_RUN_CFG_Chrome CFG        -->      
+          
+       <profile>
+   <id>DB_ALL_FULL_RUN_CFG_Chrome</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+		<suiteXmlFile>DB_PPT_CommonTestcases_CFG_Chrome.xml</suiteXmlFile> 
+          <suiteXmlFile>DB_Active_PPT_CFG_Chrome.xml</suiteXmlFile>
+           <suiteXmlFile>DB_Inpay_PPT_CFG_Chrome.xml</suiteXmlFile>  
+            <suiteXmlFile>DB_MultiplanEstimator_PPT_CFG_Chrome.xml</suiteXmlFile>  
+             <suiteXmlFile>DB_Deffered_PPT_CFG_Chrome.xml</suiteXmlFile>  
+              <suiteXmlFile>Harmony1integration_CFG_Chrome.xml</suiteXmlFile>  
+            
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>3</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+     
+     
+      <!--  DB_ALL_FULL_RUN CFG REGION  Edge --> 
+      
+             
+       <profile>
+   <id>DB_ALL_FULL_RUN_CFG_Edge</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+        <configuration>
+          <suiteXmlFiles>
+			   <suiteXmlFile>DB_PPT_CommonTestcases_CFG_Edge.xml</suiteXmlFile> 
+          <suiteXmlFile>DB_Active_PPT_CFG_Edge.xml</suiteXmlFile>
+           <suiteXmlFile>DB_Inpay_PPT_CFG_Edge.xml</suiteXmlFile>  
+             <suiteXmlFile>DB_Deffered_PPT_CFG_Edge.xml</suiteXmlFile>  
+            <suiteXmlFile>DB_MultiplanEstimator_PPT_CFG_Edge.xml</suiteXmlFile>  
+             <suiteXmlFile>Harmony1integration_CFG_Edge.xml</suiteXmlFile>  
+          
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>4</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>  
+      
+      <!--  DB_ALL_FULL_RUN CFG REGION  FireFox -->   
+      
+         <profile>
+   <id>DB_ALL_FULL_RUN_CFG_FireFox</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+			  <suiteXmlFile>DB_PPT_CommonTestcases_CFG_FireFox.xml</suiteXmlFile> 
+          <suiteXmlFile>DB_Active_PPT_CFG_FireFox.xml</suiteXmlFile>
+           <suiteXmlFile>DB_Inpay_PPT_CFG_firefox.xml</suiteXmlFile>  
+             <suiteXmlFile>DB_MultiplanEstimator_PPT_CFG_FireFox.xml</suiteXmlFile>  
+            <suiteXmlFile>DB_Deffered_PPT_CFG_FireFox.xml</suiteXmlFile>  
+             <suiteXmlFile>Harmony1integration_CFG_FireFox.xml</suiteXmlFile>  
+              
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>4</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>  
+      
+      
+      <!--  DB_ALL_FULL_RUN CFG REGION  Safari -->   
+     
+     
+        <profile>
+   <id>DB_ALL_FULL_RUN_CFG_Safari</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+		<suiteXmlFile>DB_PPT_CommonTestcases_CFG_Safari.xml</suiteXmlFile>  
+          <suiteXmlFile>DB_Active_PPT_CFG_Safari.xml</suiteXmlFile>
+           <suiteXmlFile>DB_Inpay_PPT_CFG_Safari.xml</suiteXmlFile>  
+            <suiteXmlFile>DB_MultiplanEstimator_PPT_CFG_Safari.xml</suiteXmlFile>  
+               <suiteXmlFile>DB_Deffered_PPT_CFG_Safari.xml</suiteXmlFile>  
+             <suiteXmlFile>Harmony1integration_CFG_Safari.xml</suiteXmlFile>  
+           
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>  
+     
+     
+	  
+	 
+	 <!--  DB  PROD REGION   nk--> 
+	 
+	 <!-- ######      DB Active ### Chrome  PROD      --> 
+  
+   
+   <profile>
+   <id>DB_Active_FULL_RUN_PROD_Chrome</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>DB_PPT_CommonTestcases_PROD_Chrome.xml</suiteXmlFile>
+           <suiteXmlFile>DB_Active_PPT_PROD_Chrome.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+    <!-- ######      DB Active ### Edge PROD       -->   
+	 <profile>
+   <id>DB_Active_FULL_RUN_PROD_Edge</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>DB_PPT_CommonTestcases_PROD_Edge.xml</suiteXmlFile>
+           <suiteXmlFile>DB_Active_PPT_PROD_Edge.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+	 
+	<!-- ######      DB Active ### firefox PROD       -->    
+	<profile>
+   <id>DB_Active_FULL_RUN_PROD_FireFox</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>DB_PPT_CommonTestcases_PROD_FireFox.xml</suiteXmlFile>
+           <suiteXmlFile>DB_Active_PPT_PROD_FireFox.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile> 
+	 
+	 
+	<!-- ######      DB Active ### Safari PROD       -->    
+	<profile>
+   <id>DB_Active_FULL_RUN_PROD_Safari</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>DB_PPT_CommonTestcases_PROD_Safari.xml</suiteXmlFile>
+           <suiteXmlFile>DB_Active_PPT_PROD_Safari.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile> 
+    
+	 <!--   ########################    DB In Pay prod  ###############        --> 
+ <!--    DB In Pay PROD REGION  chrome --> 
+   <profile>
+  <id>DB_Inpay_PPT_PROD_Chrome</id> 
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+           <suiteXmlFile>DB_PPT_CommonTestcases_PROD_Chrome.xml</suiteXmlFile> 
+            <suiteXmlFile>DB_Inpay_PPT_PROD_Chrome.xml</suiteXmlFile>
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+  
+  <!--    DB In Pay PROD REGION  edge --> 
+  
+   <profile>
+  <id>DB_Inpay_PPT_PROD_Edge</id> 
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>DB_PPT_CommonTestcases_PROD_Edge.xml</suiteXmlFile>
+            <suiteXmlFile>DB_Inpay_PPT_PROD_Edge.xml</suiteXmlFile>
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+  
+  <!--    DB In Pay PROD REGION  FireFox --> 
+  
+   <profile>
+  <id>DB_Inpay_PPT_PROD_FireFox</id> 
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>DB_PPT_CommonTestcases_PROD_FireFox.xml</suiteXmlFile>
+            <suiteXmlFile>DB_Inpay_PPT_PROD_Firefox.xml</suiteXmlFile>
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+   </profile>
+  <!--    DB In Pay PROD REGION  Safari --> 
+  
+   <profile>
+  <id>DB_Inpay_PPT_PROD_Safari</id> 
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+           <suiteXmlFile>DB_PPT_CommonTestcases_PROD_Safari.xml</suiteXmlFile>
+            <suiteXmlFile>DB_Inpay_PPT_PROD_Safari.xml</suiteXmlFile>
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+   </profile>
+     
+
+    <!--    #################  DB_MultiplanEstimator_PPT_Test    ##################    -->
+    <!--  DB_MultiplanEstimator PROD REGION  chrome -->     
+     
+    <profile>
+  <id>DB_MultiplanEstimator_RUN_PROD_Chrome</id>
+  
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+         <suiteXmlFiles>
+            <suiteXmlFile>DB_MultiplanEstimator_PPT_PROD_Chrome.xml</suiteXmlFile>
+             </suiteXmlFiles>
+          
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+        
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+	 
+	 <!--  DB_MultiplanEstimator PROD REGION  Edge --> 
+	 
+	   <profile>
+  <id>DB_MultiplanEstimator_RUN_PROD_Edge</id>
+  
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+         <suiteXmlFiles>
+            <suiteXmlFile>DB_MultiplanEstimator_PPT_PROD_Edge.xml</suiteXmlFile>
+             </suiteXmlFiles>
+          
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+        
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+	 
+	  <!--  DB_MultiplanEstimator PROD REGION  FireFox --> 
+	  
+	   <profile>
+  <id>DB_MultiplanEstimator_RUN_PROD_FireFox</id>
+  
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+         <suiteXmlFiles>
+            <suiteXmlFile>DB_MultiplanEstimator_PPT_PROD_FireFox.xml</suiteXmlFile>
+             </suiteXmlFiles>
+          
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+        
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+	  
+	   <!--  DB_MultiplanEstimator PROD REGION  Safari --> 
+	   
+	   
+	      <profile>
+  <id>DB_MultiplanEstimator_RUN_PROD_Safari</id>
+  
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+         <suiteXmlFiles>
+            <suiteXmlFile>DB_MultiplanEstimator_PPT_PROD_Safari.xml</suiteXmlFile>
+             </suiteXmlFiles>
+          
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+        
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+	   
+	   
+<!--     ################     Deffered_PPT_Test PROD #################        -->
+    <!--  DB_Deffered_PROD REGION Chrome --> 
+    <profile>
+  <id>DB_Deferred_Full_RUN_PROD_Chrome</id>
+  
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+         <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+         <suiteXmlFiles>
+          <suiteXmlFile>DB_PPT_CommonTestcases_PROD_Chrome.xml</suiteXmlFile>
+            <suiteXmlFile>DB_Deffered_PPT_PROD_Chrome.xml</suiteXmlFile>
+          </suiteXmlFiles>
+          
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+        
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+  
+  <!--  DB_Deffered_PROD REGION Edge --> 
+  
+   <profile>
+  <id>DB_Deferred_Full_RUN_PROD_Edge</id>
+  
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+         <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+         <suiteXmlFiles>
+          <suiteXmlFile>DB_PPT_CommonTestcases_PROD_Edge.xml</suiteXmlFile>
+            <suiteXmlFile>DB_Deffered_PPT_PROD_Edge.xml</suiteXmlFile>
+          </suiteXmlFiles>
+          
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+        
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+  
+  <!--  DB_Deffered_PROD REGION FireFox --> 
+  
+   <profile>
+  <id>DB_Deferred_Full_RUN_PROD_FireFox</id>
+  
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+         <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+         <suiteXmlFiles>
+          <suiteXmlFile>DB_PPT_CommonTestcases_PROD_FireFox.xml</suiteXmlFile>
+            <suiteXmlFile>DB_Deffered_PPT_PROD_FireFox.xml</suiteXmlFile>
+          </suiteXmlFiles>
+          
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+        
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+  
+  <!--  DB_Deffered_PROD REGION Safari --> 
+  
+   <profile>
+  <id>DB_Deferred_Full_RUN_PROD_Safari</id>
+  
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+         <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+         <suiteXmlFiles>
+          <suiteXmlFile>DB_PPT_CommonTestcases_PROD_Safari.xml</suiteXmlFile>
+            <suiteXmlFile>DB_Deffered_PPT_PROD_Safari.xml</suiteXmlFile>
+          </suiteXmlFiles>
+          
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+        
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+  
+    <!--     #########################  Go_GreenTest    ###############s    -->
+  
+ <!-- DB_Go_GreenTest_PROD chrome --> 
+  <profile>
+  <id>DB_Go_GreenTest_PROD</id>
+   
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>Go_Green_PROD.xml</suiteXmlFile>
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>   
+  
+  
+  <!-- DB_Go_GreenTest_PROD Edge -->
+  
+  <!-- DB_Go_GreenTest_PROD FireFox -->
+  
+  <!-- DB_Go_GreenTest_PROD Safari -->
+  
+  
+    <!--     ######################### DB_ROL_Process_PPT_Test_PROD    ###############s    -->	 
+      <!-- DB_ROL_Process_PPT_Test_PROD_chrome -->  
+	<profile>
+  <id>DB_ROL_Process_PPT_Test_PROD</id>
+  
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+         <suiteXmlFiles>
+            <suiteXmlFile>ROL_Process_Test_PROD.xml</suiteXmlFile>
+             </suiteXmlFiles>
+          
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>1</value>
+            </property>
+          </properties> 
+        </configuration>
+        
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+   
+     <!-- DB_ROL_Process_PPT_Test_PROD_Edge -->  
+     
+      <!-- DB_ROL_Process_PPT_Test_PROD_FireFox -->
+      
+       <!-- DB_ROL_Process_PPT_Test_PROD_Safari -->       
+	   
+	   
+<!-- ######     DB_ALL_FULL_RUN_PROD_PPT Test cases       -->    	   
+	   
+	    <!--  DB_ALL_FULL_RUN_ PROD REGION  chrome -->
+	    
+	     <profile>
+   <id>DB_ALL_FULL_RUN_PROD_Chrome</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+			  <suiteXmlFile>DB_PPT_CommonTestcases_PROD_Chrome.xml</suiteXmlFile> 
+          <suiteXmlFile>DB_Active_PPT_PROD_Chrome.xml</suiteXmlFile>
+           <suiteXmlFile>DB_Inpay_PPT_PROD_Chrome.xml</suiteXmlFile>  
+             <suiteXmlFile>DB_MultiplanEstimator_PPT_PROD_Chrome.xml</suiteXmlFile>  
+            <suiteXmlFile>DB_Deffered_PPT_PROD_Chrome.xml</suiteXmlFile>  
+           
+              
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>4</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>  
+      
+	    
+	      <!--  DB_ALL_FULL_RUN_ PROD REGION  Edge -->  
+	      
+	           <profile>
+   <id>DB_ALL_FULL_RUN_PROD_Edge</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+			  <suiteXmlFile>DB_PPT_CommonTestcases_PROD_Edge.xml</suiteXmlFile> 
+          <suiteXmlFile>DB_Active_PPT_PROD_Edge.xml</suiteXmlFile>
+           <suiteXmlFile>DB_Inpay_PPT_PROD_Edge.xml</suiteXmlFile>  
+             <suiteXmlFile>DB_MultiplanEstimator_PPT_PROD_Edge.xml</suiteXmlFile>  
+            <suiteXmlFile>DB_Deffered_PPT_PROD_FireFox.xml</suiteXmlFile>  
+           
+              
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>4</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>  
+	      
+	           <!--  DB_ALL_FULL_RUN_ PROD REGION  FireFox --> 
+	           
+	  <profile>
+   <id>DB_ALL_FULL_RUN_PROD_Firefox</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+			  <suiteXmlFile>DB_PPT_CommonTestcases_PROD_FireFox.xml</suiteXmlFile> 
+          <suiteXmlFile>DB_Active_PPT_PROD_FireFox.xml</suiteXmlFile>
+           <suiteXmlFile>DB_Inpay_PPT_PROD_Firefox.xml</suiteXmlFile>  
+             <suiteXmlFile>DB_MultiplanEstimator_PPT_PROD_FireFox.xml</suiteXmlFile>  
+            <suiteXmlFile>DB_Deffered_PPT_PROD_FireFox.xml</suiteXmlFile>  
+           
+              
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>4</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>  
+	      
+	           
+	            <!--  DB_ALL_FULL_RUN_ PROD REGION  Safari --> 
+	            
+	                       
+	  <profile>
+   <id>DB_ALL_FULL_RUN_PROD_Safari</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+			  <suiteXmlFile>DB_PPT_CommonTestcases_PROD_Safari.xml</suiteXmlFile> 
+          <suiteXmlFile>DB_Active_PPT_PROD_Safari.xml</suiteXmlFile>
+           <suiteXmlFile>DB_Inpay_PPT_PROD_Safari.xml</suiteXmlFile>  
+             <suiteXmlFile>DB_MultiplanEstimator_PPT_PROD_Safari.xml</suiteXmlFile>  
+            <suiteXmlFile>DB_Deffered_PPT_PROD_Safari.xml</suiteXmlFile>  
+           
+              
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>4</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>  
+	       
+	            
+	
+	 
+	 <!-- ############################ HW Profiles ########################################## -->
+	 
+	 
+    <!--   ######## HW CFG REGION  ##############-->  
+    
+    <!--   #####  HB_Open_Enrollment_Life_Event_CFG#####        -->
+    
+     <!--     HB_Open_Enrollment_Life_Event_CFG_Chrome   -->  
+   <profile>
+   <id>HB_Open_Enrollment_Life_Event_CFG_Chrome</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+     
+           <suiteXmlFile>HB_Open_Enrollment_Life_Event_CFG_Chrome.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+     
+     <!--     HB_Open_Enrollment_Life_Event_CFG_Edge   -->  
+     
+     <profile>
+   <id>HB_Open_Enrollment_Life_Event_CFG_Edge</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+     
+           <suiteXmlFile>HB_Open_Enrollment_Life_Event_CFG_Edge.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+     
+     
+     <!--     HB_Open_Enrollment_Life_Event_CFG_FireFox   --> 
+     
+       <profile>
+   <id>HB_Open_Enrollment_Life_Event_CFG_Firefox</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+     
+           <suiteXmlFile>HB_Open_Enrollment_Life_Event_CFG_FireFox.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile> 
+     
+      <!--     HB_Open_Enrollment_Life_Event_CFG_Safari   -->  
+      
+          <profile>
+   <id>HB_Open_Enrollment_Life_Event_CFG_Safari</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+     
+           <suiteXmlFile>HB_Open_Enrollment_Life_Event_CFG_Safari.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile> 
+     
+     
+     
+      <!--  ####   HW_CFG_LifeEvent_Birth_Adoption ######        --> 
+      
+        <!--     HW_CFG_LifeEvent_Birth_Adoption_CFG_Chrome   -->   
+      <profile>
+   <id>HW_CFG_LifeEvent_Birth_Adoption_Chrome</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_Active_Life_Event_Birth_Adoptions_PPT1_CFG_Chrome.xml</suiteXmlFile>
+        <!--   <suiteXmlFile>HB_Active_Birtth_Adoptions_PPT2_CFG_Chrome.xml</suiteXmlFile>  -->
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+     
+      <!--     HW_CFG_LifeEvent_Birth_Adoption_CFG_Edge   --> 
+      
+        
+      <profile>
+   <id>HW_CFG_LifeEvent_Birth_Adoption_Edge</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_Active_Life_Event_Birth_Adoptions_PPT1_CFG_Edge.xml</suiteXmlFile>
+    <!--       <suiteXmlFile>HB_Active_Birtth_Adoptions_PPT2_CFG_Edge.xml</suiteXmlFile>  -->
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+     
+      
+       <!--     HW_CFG_LifeEvent_Birth_Adoption_CFG_FireFox   -->    
+       
+       
+          
+      <profile>
+   <id>HW_CFG_LifeEvent_Birth_Adoption_FireFox</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_Active_Life_Event_Birth_Adoptions_PPT1_CFG_FireFox.xml</suiteXmlFile>
+     <!--      <suiteXmlFile>HB_Active_Birtth_Adoptions_PPT2_CFG_FireFox.xml</suiteXmlFile>  -->
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile> 
+       
+       <!--     HW_CFG_LifeEvent_Birth_Adoption_CFG_Safari   -->   
+       
+            
+      <profile>
+   <id>HW_CFG_LifeEvent_Birth_Adoption_Safari</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_Active_Life_Event_Birth_Adoptions_PPT1_CFG_Safari.xml</suiteXmlFile>
+     <!--      <suiteXmlFile>HB_Active_Birtth_Adoptions_PPT2_CFG_Safari.xml</suiteXmlFile> -->
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile> 
+       
+       
+  <!--  ####   HB_New_Hire_LifeEvent_CFG              ######        -->  
+  
+   <!--     HB_New_Hire_LifeEvent_CFG_chrome   -->    
+          <profile>
+   <id>HB_New_Hire_LifeEvent_CFG_Chrome</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_New_Hire_LifeEvent_CFG_Chrome.xml</suiteXmlFile>
+         
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+     
+  <!--     HB_New_Hire_LifeEvent_CFG_Edge   -->  
+  
+        <profile>
+   <id>HB_New_Hire_LifeEvent_CFG_Edge</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_New_Hire_LifeEvent_CFG_Edge.xml</suiteXmlFile>
+         
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>    
+  
+  <!--     HB_New_Hire_LifeEvent_CFG_FireFox   -->    
+  
+     <profile>
+   <id>HB_New_Hire_LifeEvent_CFG_Firefox</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_New_Hire_LifeEvent_CFG_FireFox.xml</suiteXmlFile>
+         
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>    
+  
+   <!--     HB_New_Hire_LifeEvent_CFG_Safari   -->    
+   
+     <profile>
+   <id>HB_New_Hire_LifeEvent_CFG_Safari</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_New_Hire_LifeEvent_CFG_Safari.xml</suiteXmlFile>
+         
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>      
+   
+   
+  <!--  ########### #####  HW_Active_CFG         #####        --> 
+  
+  
+    <!--  HW_Active_CFG_Run_Chrome_Browser    --> 
+        <profile>
+   <id>HW_Active_CFG_Run_Chrome</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_PPT_CommonTestcases_CFG_Chrome.xml</suiteXmlFile>
+             </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+    
+    
+    <!--  HW_Active_CFG_Run_Edge_Browser    --> 
+    
+         <profile>
+   <id>HW_Active_CFG_Run_Edge</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_PPT_CommonTestcases_CFG_Edge.xml</suiteXmlFile>
+             </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+    
+    <!--  HW_Active_CFG_Run_Firefox_Browser    --> 
+    
+    
+         <profile>
+   <id>HW_Active_CFG_Run_FireFox</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_PPT_CommonTestcases_CFG_FireFox.xml</suiteXmlFile>
+             </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+    
+    
+      <!--  HW_Active_CFG_Run_Safari_Browser    --> 
+      
+      
+         <profile>
+   <id>HW_Active_CFG_Run_Safari</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_PPT_CommonTestcases_CFG_Safari.xml</suiteXmlFile>
+             </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+      
+      
+  
+   <!--  ########### #####  HW_Retiree_CFG         #####        --> 
+   
+    <!--  HW_Retiree_CFG_Run_Chrome_Browser    --> 
+    
+     <!--  HW_Retiree_CFG_Run_Edge_Browser    --> 
+     
+      <!--  HW_Retiree_CFG_Run_FireFox_Browser    --> 
+      
+       <!--  HW_Retiree_CFG_Run_Safari_Browser    --> 
+     
+<!-- ################### HW Profile PROD  REGION ######################## --> 
+  <!--   #####  HB_Open_Enrollment_Life_Event_PROD#####        -->
+    
+     <!--     HB_Open_Enrollment_Life_Event_PROD_Chrome   -->  
+	  <profile>
+   <id>HB_Open_Enrollment_Life_Event_PROD_Chrome</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+     
+           <suiteXmlFile>HB_Open_Enrollment_Life_Event_PROD_Chrome.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+     
+	<!--     HB_Open_Enrollment_Life_Event_PROD_Edge   -->  
+	
+	  <profile>
+   <id>HB_Open_Enrollment_Life_Event_PROD_Edge</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+     
+           <suiteXmlFile>HB_Open_Enrollment_Life_Event_PROD_Edge.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+		
+	<!--     HB_Open_Enrollment_Life_Event_PROD_Firefox   --> 
+	
+	  <profile>
+   <id>HB_Open_Enrollment_Life_Event_PROD_Firefox</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+     
+           <suiteXmlFile>HB_Open_Enrollment_Life_Event_PROD_FireFox.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+		 
+	
+	<!--     HB_Open_Enrollment_Life_Event_PROD_Safari  --> 
+	
+	 <profile>
+   <id>HB_Open_Enrollment_Life_Event_PROD_Safari</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+     
+           <suiteXmlFile>HB_Open_Enrollment_Life_Event_PROD_Safari.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+		   
+	
+	
+	  <!--  ####   HW_PROD_LifeEvent_Birth_Adoption ######        --> 
+      
+        <!--     HW_LifeEvent_Birth_Adoption_PROD_Chrome   -->  
+      <profile>
+   <id>HW_PROD_LifeEvent_Birth_Adoption_Chrome</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_Active_Life_Event_Birth_Adoptions_PPT1_PROD_Chrome.xml</suiteXmlFile>
+           <suiteXmlFile>HB_Active_Birtth_Adoptions_PPT2_PROD_Chrome.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+     
+     <!--     HW_LifeEvent_Birth_Adoption_PROD_Edge   -->  
+     
+        
+      <profile>
+   <id>HW_PROD_LifeEvent_Birth_Adoption_Edge</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_Active_Life_Event_Birth_Adoptions_PPT1_PROD_Edge.xml</suiteXmlFile>
+           <suiteXmlFile>HB_Active_Birtth_Adoptions_PPT2_PROD_Edge.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+     
+       <!--     HW_LifeEvent_Birth_Adoption_PROD_FireFox   -->  
+       
+          <profile>
+   <id>HW_PROD_LifeEvent_Birth_Adoption_firefox</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_Active_Life_Event_Birth_Adoptions_PPT1_PROD_FireFox.xml</suiteXmlFile>
+           <suiteXmlFile>HB_Active_Birtth_Adoptions_PPT2_PROD_FireFox.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+       
+         <!--     HW_LifeEvent_Birth_Adoption_PROD_Safari   -->  
+         
+            
+          <profile>
+   <id>HW_PROD_LifeEvent_Birth_Adoption_Safari</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_Active_Life_Event_Birth_Adoptions_PPT1_PROD_Safari.xml</suiteXmlFile>
+           <suiteXmlFile>HB_Active_Birtth_Adoptions_PPT2_PROD_Safari.xml</suiteXmlFile>  
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>  
+         
+         
+    <!--  ####   HB_New_Hire_LifeEvent_PROD              ######        -->  
+  
+  
+  
+   <!--     HB_New_Hire_LifeEvent_PROD_chrome   -->         
+      <profile>
+     <id>HB_New_Hire_LifeEvent_PROD_Chrome</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_New_Hire_LifeEvent_PROD_Chrome.xml</suiteXmlFile>
+         
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+
+
+
+  <!--     HB_New_Hire_LifeEvent_PROD_EDGE   -->  
+  
+    <profile>
+     <id>HB_New_Hire_LifeEvent_PROD_Edge</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_New_Hire_LifeEvent_PROD_Edge.xml</suiteXmlFile>
+         
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+  
+  <!--     HB_New_Hire_LifeEvent_PROD_FireFox   -->  
+  
+  <profile>
+     <id>HB_New_Hire_LifeEvent_PROD_FireFox</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_New_Hire_LifeEvent_PROD_FireFox.xml</suiteXmlFile>
+         
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+  
+  <!--     HB_New_Hire_LifeEvent_PROD_Safari   -->  
+      <profile>
+     <id>HB_New_Hire_LifeEvent_PROD_Safari</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_New_Hire_LifeEvent_PROD_Safari.xml</suiteXmlFile>
+         
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+     
+   <!--  ########### #####  HW_Active_prod         #####        --> 
+  
+  
+    <!--  HW_Active_PROD_Run_Chrome_Browser    --> 
+    
+          <profile>
+   <id>HW_Active_PROD_Run_Chrome</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_PPT_CommonTestcases_PROD_Chrome.xml</suiteXmlFile>
+             </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+    
+    
+    <!--  HW_Active_PROD_Run_Edge_Browser    --> 
+    
+        <profile>
+   <id>HW_Active_PROD_Run_Edge</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_PPT_CommonTestcases_PROD_Edge.xml</suiteXmlFile>
+             </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+    
+    
+    <!--  HW_Active_PROD_Run_Firefox_Browser    --> 
+    
+         <profile>
+   <id>HW_Active_PROD_Run_FireFox</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_PPT_CommonTestcases_PROD_FireFox.xml</suiteXmlFile>
+             </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+    
+      <!--  HW_Active_PROD_Run_Safari_Browser    --> 
+           <profile>
+   <id>HW_Active_PROD_Run_Safari</id>
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+          <suiteXmlFile>HB_PPT_CommonTestcases_PROD_Safari.xml</suiteXmlFile>
+             </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+       
+       <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>
+         </build>
+     </profile>
+      
+  
+   <!--  ########### #####  HW_Retiree_PROD         #####        --> 
+   
+    <!--  HW_Retiree_PROD_Run_Chrome_Browser    --> 
+    
+     <!--  HW_Retiree_PROD_Run_Edge_Browser    --> 
+     
+      <!--  HW_Retiree_PROD_Run_FireFox_Browser    --> 
+      
+       <!--  HW_Retiree_PROD_Run_Safari_Browser    --> 
+     
+     
+  
+ 	 <!-- #############  Harmony1integration  Profiles CFG REGION ########################################## -->
+  
+<!--  Harmony1integration_CFG_Chrome   --> 
+  <profile>
+  <id>Harmony1integration_CFG_Chrome</id>
+   
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+      
+         <suiteXmlFile>Harmony1integration_CFG_Chrome.xml</suiteXmlFile> 
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+  
+  <!--  Harmony1integration_CFG_Edge   --> 
+  
+  <profile>
+  <id>Harmony1integration_CFG_Edge</id>
+   
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+      
+         <suiteXmlFile>Harmony1integration_CFG_Edge.xml</suiteXmlFile> 
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+  
+   <!--  Harmony1integration_CFG_FireFox   --> 
+   
+   <profile>
+  <id>Harmony1integration_CFG_FireFox</id>
+   
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+      
+         <suiteXmlFile>Harmony1integration_CFG_FireFox.xml</suiteXmlFile> 
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+   
+    <!--  Harmony1integration_CFG_Safari   --> 
+    
+    <profile>
+  <id>Harmony1integration_CFG_Safari</id>
+   
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+      
+         <suiteXmlFile>Harmony1integration_CFG_Safari.xml</suiteXmlFile> 
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+  
+  
+    <profile>
+  <id>DemoRun</id>
+   
+  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+      <!--  <version>3.0.0-M6</version>-->
+         <version>2.8</version>
+        <configuration>
+          <suiteXmlFiles>
+      
+         <suiteXmlFile>DB_Active.xml</suiteXmlFile> 
+          </suiteXmlFiles>
+           <properties>
+            <property>
+              <name>suitethreadpoolsize</name>
+              <value>2</value>
+            </property>
+          </properties> 
+        </configuration>
+      </plugin>
+      </plugins>
+       </pluginManagement>
+         </build>
+  
+  </profile>
+  </profiles>
+
+  <build>
+	  
+	  
+	  
+	  
+<!--  <resources>
+  <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+  </resources>  -->
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+      
+ <!--     <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.0.0-M6</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testSuites/testng.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>  
+      
+       -->
+        <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
+        <plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.1.0</version>
+        </plugin>
+        <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.0.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.0</version>
+        </plugin>
+       <plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.22.1</version>
+        </plugin>  
+        <plugin>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.0.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>2.5.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>2.8.2</version>
+        </plugin>
+        <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
+        <plugin>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>3.7.1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-project-info-reports-plugin</artifactId>
+          <version>3.0.0</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+    </build>
+    </project>
