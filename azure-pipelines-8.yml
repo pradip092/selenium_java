@@ -1,0 +1,63 @@
+# Maven
+# Build your Java project and run tests with Apache Maven.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/java
+trigger:
+- none
+
+pool:
+  name: Shared QA
+
+steps:
+- task: Maven@4
+  inputs:
+    mavenPomFile: 'pom.xml'
+    goals: 'test'
+    options: '-P DB_Inpay_PPT_CFG_Chrome'
+    publishJUnitResults: true
+    testResultsFiles: '**/surefire-reports/TEST-*.xml'
+    javaHomeOption: 'JDKVersion'
+    mavenVersionOption: 'Default'
+    mavenAuthenticateFeed: false
+    effectivePomSkip: false
+    sonarQubeRunAnalysis: false 
+    
+  
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
+  inputs:
+    SourceFolder: '$(system.defaultworkingdirectory)'
+    Contents: |
+     **/Automation_Reports/Test-Automation-Report.html
+     
+    TargetFolder: '$(build.artifactstagingdirectory)'
+  condition: always()
+  
+  
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: drop'
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
+  condition: always()
+
+- task: PowerShell@2
+  condition: always()
+  inputs:
+      targetType: 'inline'
+      script: |
+                $smtpServer = "smtpServer"
+                 $smtpPort = 25
+                 $from = "pradeep.nayak@gmail.com"
+                $subject = "Automation Test Result"
+                $buildUrl = "$(System.CollectionUri)/$(System.TeamProject)/_build/results?buildId=$(Build.BuildId)"
+                $body = "The Selenium test run has been completed successfully. You can view the build results ($buildUrl)."
+                $recipients = "pradeep.nayak@gmail.com"
+                 $message = New-Object System.Net.Mail.MailMessage
+                $message.From = $from
+                $message.Subject = $subject
+                $message.Body = $body
+                 foreach ($recipient in $recipients) {
+                 $message.To.Add($recipient)
+                }
+                $smtpClient = New-Object System.Net.Mail.SmtpClient($smtpServer, $smtpPort)
+                 $smtpClient.Send($message)

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <theme>dark</theme>
+        <documentTitle>MPC Automation Report</documentTitle>
+        <reportName>Test Execution Results</reportName>
+        
+        <!-- ADD THESE MISSING PROPERTIES -->
+        <timeStampFormat>yyyy-MM-dd HH:mm:ss</timeStampFormat>
+        <reportTimelineEnabled>true</reportTimelineEnabled>
+        <enableTestRunnerLogs>true</enableTestRunnerLogs>
+        <protocol>https</protocol>
+        
+        <styles>
+            <![CDATA[
+                /* Custom Color Scheme */
+                :root {
+                    --primary-color: #2563eb;
+                    --success-color: #10b981;
+                    --fail-color: #ef4444;
+                    --skip-color: #f59e0b;
+                }
+                
+                /* Sidebar Styling */
+                .side-nav {
+                    background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%) !important;
+                    overflow-y: auto !important;
+                    max-height: 100vh !important;
+                }
+                
+                /* Header Styling */
+                .navbar {
+                    background: linear-gradient(90deg, #2563eb 0%, #1d4ed8 100%) !important;
+                    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+                }
+                
+                /* Test Cards */
+                .test-content {
+                    border-radius: 8px !important;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+                    margin-bottom: 10px !important;
+                }
+                
+                /* Pass/Fail/Skip Badges */
+                .badge-success {
+                    background-color: #10b981 !important;
+                    border-radius: 20px !important;
+                    padding: 4px 12px !important;
+                }
+                
+                .badge-danger {
+                    background-color: #ef4444 !important;
+                    border-radius: 20px !important;
+                    padding: 4px 12px !important;
+                }
+                
+                /* Category Tags */
+                .category {
+                    background: #e0e7ff !important;
+                    color: #3730a3 !important;
+                    border-radius: 15px !important;
+                    padding: 2px 10px !important;
+                    font-size: 12px !important;
+                    font-weight: 600 !important;
+                }
+            ]]>
+        </styles>
+    </configuration>
+</extentreports>

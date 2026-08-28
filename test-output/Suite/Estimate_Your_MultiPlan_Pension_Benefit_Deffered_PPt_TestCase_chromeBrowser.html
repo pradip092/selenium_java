@@ -1,0 +1,376 @@
+<html>
+<head>
+<title>TestNG:  Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase_chromeBrowser</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase_chromeBrowser</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>25/2/2</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Feb 22 18:18:54 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>472 seconds (472990 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>All DB_MultiPlanEstimator_PPT_TestCases </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_06_to_verify_MultiPlans_Name_Present_in_Estimate_Your_Multiplan_Estimate_Pension_Benefit_Page_Matched_or_Not()'><b>TS_10_TC_06_to_verify_MultiPlans_Name_Present_in_Estimate_Your_Multiplan_Estimate_Pension_Benefit_Page_Matched_or_Not</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_06_to_verify_MultiPlans_Name_Present_in_Estimate_Your_Multiplan_Estimate_Pension_Benefit_Page_Matched_or_Not(Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.java:251)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace415192175", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace415192175'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_06_to_verify_MultiPlans_Name_Present_in_Estimate_Your_Multiplan_Estimate_Pension_Benefit_Page_Matched_or_Not(Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>8</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_28_to_verify_newMultiPlanEstimateCreated_Present_in_EstimatesSave_Page_table()'><b>TS_10_TC_28_to_verify_newMultiPlanEstimateCreated_Present_in_EstimatesSave_Page_table</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td><div><pre>java.lang.AssertionError: expected [https://mbctra-cfg.myplansconnect.com/db-plan/1/estimate-your-pension] but found [https://mbctra.myplansconnect.com/db-plan/1/estimate-your-pension]
+	at DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_28_to_verify_newMultiPlanEstimateCreated_Present_in_EstimatesSave_Page_table(Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.java:1182)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace508555111", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace508555111'><pre>java.lang.AssertionError: expected [https://mbctra-cfg.myplansconnect.com/db-plan/1/estimate-your-pension] but found [https://mbctra.myplansconnect.com/db-plan/1/estimate-your-pension]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_28_to_verify_newMultiPlanEstimateCreated_Present_in_EstimatesSave_Page_table(Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.java:1182)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>5</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_01_to_verify_user_able_to_Login_MPC_with_valid_credentials()'><b>TS_10_TC_01_to_verify_user_able_to_Login_MPC_with_valid_credentials</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase<br>Parameters: Mbctra7301@lifeworks.com, Mbctra@001</td>
+<td></td>
+<td>40</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_02_to_verify_Multiplanner_Estimates_tile_is_Present_or_not_Dashboard_For_Multiplanner_DefferedPPt()'><b>TS_10_TC_02_to_verify_Multiplanner_Estimates_tile_is_Present_or_not_Dashboard_For_Multiplanner_DefferedPPt</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>235</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_04_to_verify_user_able_to_Land_on_Multiplanner_Estimate_your_Pension_Page()'><b>TS_10_TC_04_to_verify_user_able_to_Land_on_Multiplanner_Estimate_your_Pension_Page</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>1</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_05_to_verify_all_the_expected_element_Present_in_Estimate_Your_Mulyiplan_Estimate_Pension_Benefit_Page()'><b>TS_10_TC_05_to_verify_all_the_expected_element_Present_in_Estimate_Your_Mulyiplan_Estimate_Pension_Benefit_Page</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>0</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_07_to_verify_User_Able_to_Select_custom_Tiles_if_Present()'><b>TS_10_TC_07_to_verify_User_Able_to_Select_custom_Tiles_if_Present</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>5</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_08_to_verify_User_Able_to_Select_Any_one_Tiles_Other_then_custom_Tiles_if_Present()'><b>TS_10_TC_08_to_verify_User_Able_to_Select_Any_one_Tiles_Other_then_custom_Tiles_if_Present</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>4</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_09_to_verify_Continue_Button_Present_in_Footer_is_disable_or_Not_By_default()'><b>TS_10_TC_09_to_verify_Continue_Button_Present_in_Footer_is_disable_or_Not_By_default</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>3</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_10_to_verify_Continue_button_is_disable_or_not_if_we_Select_only_tiles_But_Spouse_radio_Button_unheck()'><b>TS_10_TC_10_to_verify_Continue_button_is_disable_or_not_if_we_Select_only_tiles_But_Spouse_radio_Button_unheck</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>3</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_11_to_verify_Continue_button_is_disable_or_not_if_we_Select_All_Mandatory_options_and_Kept_Spouse_DOB_field_Blank()'><b>TS_10_TC_11_to_verify_Continue_button_is_disable_or_not_if_we_Select_All_Mandatory_options_and_Kept_Spouse_DOB_field_Blank</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>3</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_12_to_verify_Error_validation_Messsage_dispaly_or_not_if_we_Select_All_Mandatory_options_and_Kept_Spouse_DOB_field_Blank()'><b>TS_10_TC_12_to_verify_Error_validation_Messsage_dispaly_or_not_if_we_Select_All_Mandatory_options_and_Kept_Spouse_DOB_field_Blank</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>3</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_13_to_verify_if_user_Select_Are_You_Married_No_Radio_button_Then_Benef_DOB_field_Display_or_not()'><b>TS_10_TC_13_to_verify_if_user_Select_Are_You_Married_No_Radio_button_Then_Benef_DOB_field_Display_or_not</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>3</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_14_to_verify_if_user_Select_Are_You_Married_No_Radio_button_Benfeciary_And_DOB_Field_Kept_Blank_Then_Error_message_display_or_not()'><b>TS_10_TC_14_to_verify_if_user_Select_Are_You_Married_No_Radio_button_Benfeciary_And_DOB_Field_Kept_Blank_Then_Error_message_display_or_not</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>0</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_15_to_verify_if_user_Enter_invalid_date_format_in_Benefeciary_DOB_Then_Error_message_display_or_not_B()'><b>TS_10_TC_15_to_verify_if_user_Enter_invalid_date_format_in_Benefeciary_DOB_Then_Error_message_display_or_not_B</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>6</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_16_to_verify_if_user_Enter_invalid_date_format_in_Spouse_DOB_Then_Error_message_display_or_not()'><b>TS_10_TC_16_to_verify_if_user_Enter_invalid_date_format_in_Spouse_DOB_Then_Error_message_display_or_not</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>5</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_17_to_verify_if_user_Select_Are_You_Married_Yes_Radio_button_and_Select_Spouse_radio_button()'><b>TS_10_TC_17_to_verify_if_user_Select_Are_You_Married_Yes_Radio_button_and_Select_Spouse_radio_button</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>4</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_18_to_verify_if_user_Select_Are_You_Married_Yes_Radio_button_and_Select_Non_Spouse_radio_button()'><b>TS_10_TC_18_to_verify_if_user_Select_Are_You_Married_Yes_Radio_button_and_Select_Non_Spouse_radio_button</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>5</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_19_to_verify_Continue_Button_is_Enabled_or_not_if_all_Mandatory_Options_Are_Filled_Except_Name_field_Optionals()'><b>TS_10_TC_19_to_verify_Continue_Button_is_Enabled_or_not_if_all_Mandatory_Options_Are_Filled_Except_Name_field_Optionals</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>4</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_20_to_verify_Continue_button_is_disable_or_not_if_user_Select_Customt_tiles_And_Doestnot_Enter_Date()'><b>TS_10_TC_20_to_verify_Continue_button_is_disable_or_not_if_user_Select_Customt_tiles_And_Doestnot_Enter_Date</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>4</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_21_to_verify_if_user_doesnt_Select_year_and_click_on_month_then_No_result_found_text_display_or_not()'><b>TS_10_TC_21_to_verify_if_user_doesnt_Select_year_and_click_on_month_then_No_result_found_text_display_or_not</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>4</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_22_to_verify_if_user_doesnt_Select_year_and_click_on_month_Then_in_year_field_Error_message_display_or_not()'><b>TS_10_TC_22_to_verify_if_user_doesnt_Select_year_and_click_on_month_Then_in_year_field_Error_message_display_or_not</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>3</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_23_to_verify_if_user_Select_year_and_doesnot_Select_month_Then_in_Month_field_Error_message_display_or_not()'><b>TS_10_TC_23_to_verify_if_user_Select_year_and_doesnot_Select_month_Then_in_Month_field_Error_message_display_or_not</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>3</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_24_to_verify_Name_Your_Estimates_field_with_valid_Invalid_input()'><b>TS_10_TC_24_to_verify_Name_Your_Estimates_field_with_valid_Invalid_input</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>3</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_25_to_verify_user_able_to_Land_On_Most_Recent_MultiPlan_Estimates_Page_By_Selecting_Custom_Tile_And_Selecting_Are_you_married_Yes_And_Entering_SpouseDOB()'><b>TS_10_TC_25_to_verify_user_able_to_Land_On_Most_Recent_MultiPlan_Estimates_Page_By_Selecting_Custom_Tile_And_Selecting_Are_you_married_Yes_And_Entering_SpouseDOB</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>51</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_26_to_verify_new_Estimate_Craeted_Name_And_Estimated_Generated_Date_Matched_OR_Not_Most_Recnet_Multiplan_Page()'><b>TS_10_TC_26_to_verify_new_Estimate_Craeted_Name_And_Estimated_Generated_Date_Matched_OR_Not_Most_Recnet_Multiplan_Page</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>0</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_27_to_verify_newMultiPlanEstimateCreated_Present_in_SavedMultiPlan_Estimates_Page_table()'><b>TS_10_TC_27_to_verify_newMultiPlanEstimateCreated_Present_in_SavedMultiPlan_Estimates_Page_table</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td></td>
+<td>5</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_06_to_verify_MultiPlans_Name_Present_in_Estimate_Your_Multiplan_Estimate_Pension_Benefit_Page_Matched_or_Not()'><b>TS_10_TC_06_to_verify_MultiPlans_Name_Present_in_Estimate_Your_Multiplan_Estimate_Pension_Benefit_Page_Matched_or_Not</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_06_to_verify_MultiPlans_Name_Present_in_Estimate_Your_Multiplan_Estimate_Pension_Benefit_Page_Matched_or_Not(Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.java:251)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace750464884", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace750464884'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at org.testng.Assert.assertTrue(Assert.java:54)
+	at DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_06_to_verify_MultiPlans_Name_Present_in_Estimate_Your_Multiplan_Estimate_Pension_Benefit_Page_Matched_or_Not(Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.java:251)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>4</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+<tr>
+<td title='DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_28_to_verify_newMultiPlanEstimateCreated_Present_in_EstimatesSave_Page_table()'><b>TS_10_TC_28_to_verify_newMultiPlanEstimateCreated_Present_in_EstimatesSave_Page_table</b><br>Test class: DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase</td>
+<td><div><pre>java.lang.AssertionError: expected [https://mbctra-cfg.myplansconnect.com/db-plan/1/estimate-your-pension] but found [https://mbctra.myplansconnect.com/db-plan/1/estimate-your-pension]
+	at DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_28_to_verify_newMultiPlanEstimateCreated_Present_in_EstimatesSave_Page_table(Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.java:1182)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1116568301", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1116568301'><pre>java.lang.AssertionError: expected [https://mbctra-cfg.myplansconnect.com/db-plan/1/estimate-your-pension] but found [https://mbctra.myplansconnect.com/db-plan/1/estimate-your-pension]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.TS_10_TC_28_to_verify_newMultiPlanEstimateCreated_Present_in_EstimatesSave_Page_table(Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase.java:1182)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>7</td>
+<td>DB_MultiplanEstimator_PPT_TestCases.Estimate_Your_MultiPlan_Pension_Benefit_Deffered_PPt_TestCase@43015c69</td></tr>
+</table><p>
+</body>
+</html>

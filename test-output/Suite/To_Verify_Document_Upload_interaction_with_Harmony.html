@@ -1,0 +1,357 @@
+<html>
+<head>
+<title>TestNG:  To_Verify_Document_Upload_interaction_with_Harmony</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>To_Verify_Document_Upload_interaction_with_Harmony</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>20/1/1</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 14 17:02:12 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>732 seconds (732512 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>All HARMONY1_Integration_TestCases </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_22_to_Verify_Click_On_Attachment_Doc()'><b>TS_72_TC_22_to_Verify_Click_On_Attachment_Doc</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;View Document&apos;]&quot;}
+  (Session info: chrome=121.0.6167.161)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+System info: host: &apos;UP-005CD237B4KS&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bf6ed62dbf73f166bff339e7e5cb180b, findElement {using=xpath, value=//span[text()=&apos;View Document&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\NANDAN~1.GUP\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50045}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50045/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf6ed62dbf73f166bff339e7e5cb180b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+	at AbstractComponents.AbstractComponent.javascript_click_Element(AbstractComponent.java:97)
+	at Harmony1_Integration_PageObjects.Document_upload_verification_In_Harmony.Click_view_Doc_Btn(Document_upload_verification_In_Harmony.java:64)
+	at Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_22_to_Verify_Click_On_Attachment_Doc(Document_upload_verification_In_HarmonyTest.java:839)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace618148142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace618148142'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;View Document&apos;]&quot;}
+  (Session info: chrome=121.0.6167.161)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+System info: host: &apos;UP-005CD237B4KS&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bf6ed62dbf73f166bff339e7e5cb180b, findElement {using=xpath, value=//span[text()=&apos;View Document&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\NANDAN~1.GUP\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50045}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50045/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf6ed62dbf73f166bff339e7e5cb180b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+	at AbstractComponents.AbstractComponent.javascript_click_Element(AbstractComponent.java:97)
+	at Harmony1_Integration_PageObjects.Document_upload_verification_In_Harmony.Click_view_Doc_Btn(Document_upload_verification_In_Harmony.java:64)
+	at Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_22_to_Verify_Click_On_Attachment_Doc(Document_upload_verification_In_HarmonyTest.java:839)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>110</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.Click_On_Forms_Document_Tab_and_Then_General_Docuent_SubTab()'><b>Click_On_Forms_Document_Tab_and_Then_General_Docuent_SubTab</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest</td>
+<td></td>
+<td>6</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_01_to_verify_user_able_to_Login_Harmony_with_valid_credentilas()'><b>TS_72_TC_01_to_verify_user_able_to_Login_Harmony_with_valid_credentilas</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest<br>Parameters: Nandan.Gupta, Lifeworks@21</td>
+<td></td>
+<td>52</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_02_to_Verify_user_able_to_land_On_SearchPage()'><b>TS_72_TC_02_to_Verify_user_able_to_land_On_SearchPage</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest</td>
+<td></td>
+<td>4</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_03_to_Verify_user_able_to_Select_Client_From_Dropdown()'><b>TS_72_TC_03_to_Verify_user_able_to_Select_Client_From_Dropdown</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest</td>
+<td></td>
+<td>3</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_04_to_Verify_user_able_to_input_SSN_NO_And_Click_On_Search()'><b>TS_72_TC_04_to_Verify_user_able_to_input_SSN_NO_And_Click_On_Search</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest</td>
+<td></td>
+<td>6</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_05_to_Verify_user_able_to_click_on_Profile_Button()'><b>TS_72_TC_05_to_Verify_user_able_to_click_on_Profile_Button</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest</td>
+<td></td>
+<td>6</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_06_to_Verify_user_able_to_click_on_ViewAll_Link_of_InProgress_Container()'><b>TS_72_TC_06_to_Verify_user_able_to_click_on_ViewAll_Link_of_InProgress_Container</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest</td>
+<td></td>
+<td>4</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_07_to_Store_Last_WorkOrder_ID()'><b>TS_72_TC_07_to_Store_Last_WorkOrder_ID</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest</td>
+<td></td>
+<td>4</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_08_Switch_To_New_Tab_For_MPC_Launch()'><b>TS_72_TC_08_Switch_To_New_Tab_For_MPC_Launch</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest</td>
+<td></td>
+<td>2</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_08_to_verify_user_able_to_Login_MPC_with_valid_credentilas()'><b>TS_72_TC_08_to_verify_user_able_to_Login_MPC_with_valid_credentilas</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest<br>Parameters: mbctra0049@lifeworks.com, Welcome1!</td>
+<td></td>
+<td>78</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_13_to_verify_new_WorkOrder_ID_created_or_not()'><b>TS_72_TC_13_to_verify_new_WorkOrder_ID_created_or_not</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest</td>
+<td></td>
+<td>310</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_14_to_verify_new_work_order_created_valid_or_not()'><b>TS_72_TC_14_to_verify_new_work_order_created_valid_or_not</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest</td>
+<td></td>
+<td>0</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_15_to_Verify_user_able_land_on_view_Work_order_Page()'><b>TS_72_TC_15_to_Verify_user_able_land_on_view_Work_order_Page</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest</td>
+<td></td>
+<td>5</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_16_to_Verify_Work_orderID_visibel_in_Related_Item2Field_is_correct_or_not()'><b>TS_72_TC_16_to_Verify_Work_orderID_visibel_in_Related_Item2Field_is_correct_or_not</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest</td>
+<td></td>
+<td>0</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_17_to_Verify_Interaction_ID_visibel_in_Related_Item2Field_is_Generated_or_not()'><b>TS_72_TC_17_to_Verify_Interaction_ID_visibel_in_Related_Item2Field_is_Generated_or_not</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest</td>
+<td></td>
+<td>0</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_18_to_Verify_Work_orderID_visibel_in_DashBoard_is_correct_or_not()'><b>TS_72_TC_18_to_Verify_Work_orderID_visibel_in_DashBoard_is_correct_or_not</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest</td>
+<td></td>
+<td>0</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_19_to_Verify_Work_Order_Summary_Fields_Details()'><b>TS_72_TC_19_to_Verify_Work_Order_Summary_Fields_Details</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest</td>
+<td></td>
+<td>0</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_20_to_Verify_Work_Order_Standard_Fields_Details()'><b>TS_72_TC_20_to_Verify_Work_Order_Standard_Fields_Details</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest</td>
+<td></td>
+<td>0</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_21_to_Verify_Click_On_Attachment_Expand_Btn()'><b>TS_72_TC_21_to_Verify_Click_On_Attachment_Expand_Btn</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest</td>
+<td></td>
+<td>0</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.Verify_Upload_pdf_file_lessThen_10mb()'><b>Verify_Upload_pdf_file_lessThen_10mb</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest<br>Parameters: chrome</td>
+<td></td>
+<td>9</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_22_to_Verify_Click_On_Attachment_Doc()'><b>TS_72_TC_22_to_Verify_Click_On_Attachment_Doc</b><br>Test class: Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;View Document&apos;]&quot;}
+  (Session info: chrome=121.0.6167.161)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+System info: host: &apos;UP-005CD237B4KS&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bf6ed62dbf73f166bff339e7e5cb180b, findElement {using=xpath, value=//span[text()=&apos;View Document&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\NANDAN~1.GUP\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50045}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50045/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf6ed62dbf73f166bff339e7e5cb180b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+	at AbstractComponents.AbstractComponent.javascript_click_Element(AbstractComponent.java:97)
+	at Harmony1_Integration_PageObjects.Document_upload_verification_In_Harmony.Click_view_Doc_Btn(Document_upload_verification_In_Harmony.java:64)
+	at Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_22_to_Verify_Click_On_Attachment_Doc(Document_upload_verification_In_HarmonyTest.java:839)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1143060908", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1143060908'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;View Document&apos;]&quot;}
+  (Session info: chrome=121.0.6167.161)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.2.2&apos;, revision: &apos;683ccb65d6&apos;
+System info: host: &apos;UP-005CD237B4KS&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bf6ed62dbf73f166bff339e7e5cb180b, findElement {using=xpath, value=//span[text()=&apos;View Document&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.161, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\NANDAN~1.GUP\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50045}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50045/devtoo..., se:cdpVersion: 121.0.6167.161, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf6ed62dbf73f166bff339e7e5cb180b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+	at AbstractComponents.AbstractComponent.javascript_click_Element(AbstractComponent.java:97)
+	at Harmony1_Integration_PageObjects.Document_upload_verification_In_Harmony.Click_view_Doc_Btn(Document_upload_verification_In_Harmony.java:64)
+	at Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest.TS_72_TC_22_to_Verify_Click_On_Attachment_Doc(Document_upload_verification_In_HarmonyTest.java:839)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>110</td>
+<td>Harmony1_Integration_TestCases.Document_upload_verification_In_HarmonyTest@36060e</td></tr>
+</table><p>
+</body>
+</html>

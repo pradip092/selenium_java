@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="customListeners.TestListener"/>
+  </listeners>
+  <test thread-count="1" parallel="tests" name="HB_Active_MyAccount_LifeEvents_Open_enrollment_Test(failed)">
+    <parameter name="URLS" value="MBCTRACFGURL"/>
+    <parameter name="PPT" value="HB_Active_CFG_PPT4_TestData"/>
+    <parameter name="browser" value="edge"/>
+    <groups>
+      <run>
+        <include name="HB_Active_PPT_TestCases"/>
+        <include name="All"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="HB_OpenEnrollment_LifeEvent_Test.HB_Active_MyAccount_LifeEvents_Open_enrollment_Test">
+        <methods>
+          <include name="teardown"/>
+          <include name="TS_49_TC_57__to_verify_Dependent_table_Self_DOB"/>
+          <include name="TS_49_TC_105_to_Verify_DSD_Flow"/>
+          <include name="TS_49_TC_56_to_verify_Dependent_table_name_Self"/>
+          <include name="TS_49_TC_54_to_verify_Size_And_text_of_Sub_tab_Summary_Page_"/>
+          <include name="initDriver"/>
+          <include name="TS_49_TC_80_to_Selct_NonHSA_MedicalPlan"/>
+          <include name="TS_51_TC_26_Verify_View_Details_Btn_And_ALL_filled_Details_must_be_Populated_in_View_Detail_Page"/>
+          <include name="TS_51_TC_25_Verify__filled_Details_must_be_Populated_in_Added_Dependent_Tile"/>
+          <include name="TS_52_TC_01_to_verify_Click_ON_LifeEvent_DropdownOption_In_MyAccountTab"/>
+          <include name="TS_49_TC_74_to_verify_user_able_to_Land_on_LifeEvents_Health_Page"/>
+          <include name="AfterSuite"/>
+          <include name="TS_49_TC_107_to_verify_user_able_to_Land_on_LifeEvents_insurance_Coverage_Page"/>
+        </methods>
+      </class> <!-- HB_OpenEnrollment_LifeEvent_Test.HB_Active_MyAccount_LifeEvents_Open_enrollment_Test -->
+    </classes>
+  </test> <!-- HB_Active_MyAccount_LifeEvents_Open_enrollment_Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,70 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+ <!--<suite  thread-count="1" name="Suite" parallel="tests">   -->
+ <suite name="Suite">  
+ <groups>
+   	<run>
+   	  <include name = "All"/>
+   	</run>
+ </groups>  
+	  
+<listeners>
+
+<listener class-name="customListeners.TestListener"/>
+
+</listeners>
+
+
+
+  <test name="ROL_Process">
+      <parameter name="browser" value="edge"/>
+      <parameter name="URLS" value="MBCTRACFGURL"/>
+    <parameter name="PPT" value="DB_ROL_Process_CFG_PPT_TestData"/> 
+      <groups>
+   			<run>		
+   				<include name = "ROL_Process_Test"/>
+   			</run>
+   		</groups> 
+      <classes>
+      <class name="ROL_Process_Test.Rol_flow_RedCalc"/> 
+    </classes>
+  </test>    
+
+
+<test name="paymentPage_SummaryPage_Beneficiery_page_Test" >
+      <parameter name="browser" value="edge"/> 
+    <parameter name="PPT" value="DB_ROL_Process_CFG_PPT_TestData"/> 
+    <parameter name="URLS" value="MBCTRACFGURL"/> 
+       <groups>
+   			<run>
+   				
+   				<include name = "ROL_Process_Test"/>
+   			</run>
+   		</groups> 
+      <classes>
+      <class name="ROL_Process_Test.ROL_paymentPage_SummaryPage_Beneficiery_page_Test"/> 
+    </classes>
+  </test>   
+ 
+  
+
+
+
+  <test name="ROL_New_PPT" >
+      <parameter name="browser" value="edge"/>
+    <parameter name="PPT" value="ROL_New_PPT"/> 
+       <parameter name="URLS" value="MBCTRACFGURL"/> 
+       <groups>
+   			<run>
+   				
+   				<include name = "ROL_Process_Test"/>
+   			</run>
+   		</groups> 
+      <classes>
+      <class name="ROL_Process_Test.ROL_New_PPT_TestCases"/> 
+    </classes>
+  </test>   
+ 
+  
+  
+</suite> <!-- Suite -->

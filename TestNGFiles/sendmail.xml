@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+     <suite name="Suite" >  
+	 <groups>
+   	<run>
+   	 <include name = "All"/>
+   	</run>
+  </groups>  
+		
+<listeners>
+
+<listener class-name="customListeners.TestListener"/>
+
+</listeners>
+
+<!--     Life Event Print Scenario   -->
+
+
+ <test name="HB_Print_Scenario" >	 
+    <groups>
+   			<run>
+   				<include name = "sendmails"/>
+   			</run>
+   		</groups>  
+       <classes>
+    <class name="Identifying_Any_PPT_Type_TestCases.DB_InPay_Multiplan_PPT_Test_Case"/>
+   
+   </classes>
+  </test> 
+
+  </suite>
